@@ -1,5 +1,5 @@
 import "./HistoryResultListPage.css";
-import HistoryResultDetailPage from "./HistoryResultDetailPage"
+import {HistoryResultDetail1, HistoryResultDetail2, HistoryResultDetail3} from "./HistoryResultDetailPage"
 
 function HistoryResultListPage() {
     return (
@@ -19,23 +19,25 @@ function HistoryResultListPage() {
                     <th scope="row">2022-09-26</th>
                     <td>Test1</td>
                     <td>Pure tone audiometry</td>
-                    <td>Result</td>
+                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test1Modal" >Result</button> </td>
                 </tr>
                 <tr>
                     <th scope="row">2022-10-11</th>
                     <td>Test2</td>
                     <td>Masked noise test</td>
-                    <td>Result</td>
+                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test2Modal" >Result</button> </td>
                 </tr>
                 <tr>
                     <th scope="row">2022-10-19</th>
                     <td>Test3</td>
                     <td>Spatial audio test</td>
-                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test1Modal" >Result</button> </td>
+                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test3Modal" >Result</button> </td>
                 </tr>
                 </tbody>
             </table>
-            <HistoryResultDetailPage/>
+            <HistoryResultDetail1/>
+            <HistoryResultDetail2/>
+            <HistoryResultDetail3/>
         </div>
 
     );
