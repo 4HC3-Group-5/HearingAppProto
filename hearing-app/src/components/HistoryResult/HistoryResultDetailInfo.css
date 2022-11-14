@@ -1,0 +1,67 @@
+.gauge1 {
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: #AA2222FF;
+    overflow: hidden;
+
+    width: 200px;
+    --rotation: 83deg;
+    --color: #5cb85c;
+    --background: #e9ecef;
+}
+
+.gauge1:before {
+    content: "";
+    display: block;
+    padding-top: 50%; /* ratio of 2:1*/
+}
+
+.gauge1 .chart {
+    overflow: hidden;
+}
+
+.gauge1 .mask {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    top: 40%;
+    background-color: #fff;
+    border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge1 .percentage {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: #AAAAAAFF;
+    transform: rotate(var(--rotation));
+    transform-origin: bottom center;
+    transition-duration: 600ms;
+}
+
+.gauge1:hover {
+    --rotation: 100deg;
+}
+
+.gauge1 .value {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.gauge1 .min {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.gauge1 .max {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}

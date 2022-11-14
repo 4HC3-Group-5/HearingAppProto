@@ -1,5 +1,5 @@
 import "./HistoryResultListPage.css";
-import {HistoryResultDetail1, HistoryResultDetail2, HistoryResultDetail3} from "./HistoryResultDetailPage"
+import {HistoryResultDetailModal1, HistoryResultDetailModal2, HistoryResultDetailModal3} from "./HistoryResultDetailModal"
 
 function HistoryResultListPage() {
     return (
@@ -35,9 +35,9 @@ function HistoryResultListPage() {
                 </tr>
                 </tbody>
             </table>
-            <HistoryResultDetail1/>
-            <HistoryResultDetail2/>
-            <HistoryResultDetail3/>
+            <HistoryResultDetailModal1/>
+            <HistoryResultDetailModal2/>
+            <HistoryResultDetailModal3/>
         </div>
 
     );
