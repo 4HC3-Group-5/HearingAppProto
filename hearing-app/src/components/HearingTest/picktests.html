@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choices of tests</title>
+    <style>
+        
+        .icons {
+            text-align: center;
+            display:inline-block;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        img {
+            width: 400px;
+            height: 400px;
+        }
+        label {
+            padding-right: 10px;
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <label for="file">
+            Test progress:
+        </label>
+        <progress id="file" max="100" value="0"> 
+            0% 
+        </progress>
+    </div>
+    
+    <div class="iconcolumn">
+        <div class="icons"> 
+            <img src="pure tone.png">
+        </div> 
+        <div class="icons">
+            <img src="masked icon.png"> 
+        </div> 
+        <div class="icons"> 
+            <img src="spatial audio.jpg">
+        </div> 
+    </div>
+    <div>
+        <div class="icons">pure tone test</div>
+        <div class="icons">masked icon test</div>
+        <div class="icons">spatial audio test</div>
+    </div>
+</body>
+</html>
