@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LoginPopup from "./LoginPopup";
 import SignupPopup from "./SignupPopup";
+import "../HomePage.css";
 
 export function LoginHandler() {
   const [LoginIsOpen, setLoginIsOpen] = useState(false);
@@ -11,7 +12,12 @@ export function LoginHandler() {
 
   return (
     <div>
-      <input type="button" value="LOG-IN" onClick={toggleLoginPopup} />
+      <input
+        className="nav-btn"
+        type="button"
+        value="LOG-IN"
+        onClick={toggleLoginPopup}
+      />
       {LoginIsOpen && <LoginPopup handleClose={toggleLoginPopup} />}
     </div>
   );
@@ -26,7 +32,12 @@ export function SignupHandler() {
 
   return (
     <div>
-      <input type="button" value="SIGN-UP" onClick={toggleSignupPopup} />
+      <input
+        className="nav-btn"
+        type="button"
+        value="SIGN-UP"
+        onClick={toggleSignupPopup}
+      />
       {SignupIsOpen && <SignupPopup handleClose={toggleSignupPopup} />}
     </div>
   );

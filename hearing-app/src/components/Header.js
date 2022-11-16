@@ -39,9 +39,9 @@ function Header() {
       <a className="nav-link" href="#">
         HEARING Q&As
       </a>
-      <a className="nav-link" href="#">
+      {/* <a className="nav-link" href="#">
         History Result
-      </a>
+      </a> */}
       <a className="nav-link">
         <SignupHandler />
       </a>
