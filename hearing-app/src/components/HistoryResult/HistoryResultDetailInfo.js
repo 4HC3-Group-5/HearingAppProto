@@ -136,7 +136,7 @@ export function HistoryResultDetailInfo2() {
                                 Left ear
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">30</h5>
+                                <div className="card-title">30</div>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ export function HistoryResultDetailInfo2() {
                                 Right ear
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">50</h5>
+                                <div className="card-title">50</div>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@ export function HistoryResultDetailInfo2() {
                                 Ear age
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">70</h5>
+                                <div className="card-title">70</div>
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@ export function HistoryResultDetailInfo2() {
                                 Ear type
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">Right-preferred</h5>
+                                <div className="card-title">Right-preferred</div>
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@ export function HistoryResultDetailInfo3() {
                                 Left ear
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">30</h5>
+                                <div className="card-title">30</div>
                             </div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@ export function HistoryResultDetailInfo3() {
                                 Right ear
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">50</h5>
+                                <div className="card-title">50</div>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@ export function HistoryResultDetailInfo3() {
                                 Ear age
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">70</h5>
+                                <div className="card-title">70</div>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@ export function HistoryResultDetailInfo3() {
                                 Ear type
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">Right-preferred</h5>
+                                <div className="card-title">Right-preferred</div>
                             </div>
                         </div>
                     </div>

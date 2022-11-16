@@ -196,3 +196,7 @@
     bottom: 0;
     right: 5%;
 }
+
+.card{
+    --bs-card-cap-padding-x: 0.4rem
+}

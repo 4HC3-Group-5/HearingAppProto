@@ -16,7 +16,6 @@ export function HistoryResultDetailModal1() {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" className="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
@@ -38,7 +37,6 @@ export function HistoryResultDetailModal2() {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" className="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
@@ -60,7 +58,6 @@ export function HistoryResultDetailModal3() {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" className="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
