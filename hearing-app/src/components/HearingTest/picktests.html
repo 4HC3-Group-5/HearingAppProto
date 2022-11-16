@@ -22,34 +22,40 @@
             padding-right: 10px;
             font-size: 1rem;
         }
+        #myProgress {
+            width: 100%;
+            background-color: grey;
+        }
 
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: green;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <label for="file">
-            Test progress:
-        </label>
-        <progress id="file" max="100" value="0"> 
-            0% 
-        </progress>
+    <label for="file">
+        Test progress:
+    </label>
+    <div class="process" id="myProgress">
+        <div id="myBar"></div>
     </div>
     
     <div class="iconcolumn">
-        <div class="icons"> 
-            <img src="pure tone.png">
-        </div> 
-        <div class="icons">
-            <img src="masked icon.png"> 
-        </div> 
-        <div class="icons"> 
-            <img src="spatial audio.jpg">
-        </div> 
+        <button class="icons"> 
+            <img src="pics/pure tone.png">
+            pure tone test
+        </button> 
+        <button class="icons">
+            <img src="pics/masked icon.png"> 
+            masked icon test
+        </button> 
+        <button class="icons"> 
+            <img src="pics/spatial audio.jpg">
+            spatial audio test
+        </button> 
     </div>
-    <div>
-        <div class="icons">pure tone test</div>
-        <div class="icons">masked icon test</div>
-        <div class="icons">spatial audio test</div>
-    </div>
+
 </body>
 </html>
