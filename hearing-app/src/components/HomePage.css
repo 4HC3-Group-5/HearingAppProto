@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 .main-menu {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
@@ -35,4 +38,76 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.icon-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.text-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  font-size: 50px;
+}
+
+.test-icon {
+  font-size: 200px;
+}
+
+.info-icon {
+  font-size: 150px;
+}
+
+.user-icon {
+  font-size: 100px;
+}
+
+.user-text {
+  font-size: 25px;
+}
+
+.btn-gradient {
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-gradient:active {
+  transform: translateY(2px);
+}
+
+.btn-info {
+  background: #9fd356;
+}
+
+.btn-test {
+  background: #f46036;
+}
+
+.btn-user {
+  background: #3c91e6;
 }
