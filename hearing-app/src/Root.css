@@ -1,0 +1,22 @@
+.root {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.rootUpper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.outlet {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.outlet > * {
+    flex-grow: 1;
+}

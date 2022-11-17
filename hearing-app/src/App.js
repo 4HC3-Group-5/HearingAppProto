@@ -6,14 +6,15 @@ import {
     Route,
 } from "react-router-dom";
 
-import "./App.css";
+import AppProvider from "./AppProvider";
 
 import HomePage from "./components/HomePage";
-import HomePageUser from "./components/HomePageUser";
-import HistoryResultListPage from "./components/HistoryResult/HistoryResultListPage";
+import HistoryResultListPage from "./components/Profile/HistoryResult/HistoryResultListPage";
 import ErrorPage from "./components/ErrorPage";
 import Root from "./Root";
-import { PickTests } from "./components/HearingTest/PickTests";
+import ProfileRoot from "./components/Profile/ProfileRoot";
+import UserProfile from "./components/Profile/UserProfile/UserProfile";
+import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
 
 const router = createBrowserRouter([
     {
@@ -22,29 +23,40 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage/>,
         children: [
             {
-                path: "/",
+                path: "",
                 element: <HomePage/>,
             },
             {
-                path: "/user",
-                element: <HomePageUser/>,
-            },
-            {
-                path: "/history",
-                element: <HistoryResultListPage/>,
-            },
-            {
-                path: "/test",
-                element: <PickTests/>,
-            },
+                path: "profile",
+                element: <ProfileRoot/>,
+                children: [
+                    {
+                        path: "",
+                        element: <UserProfile/>,
+                    },
+                    {
+                        path: "history",
+                        element: <HistoryResultListPage/>,
+                    },
+                    {
+                        path: "analysis",
+                        element: <OverallAnalysis/>,
+                    }
+                ]
+            }
         ],
     },
 ]);
 
+
+
 function App() {
+
     return (
         <React.StrictMode>
-            <RouterProvider router={router}/>
+            <AppProvider>
+                <RouterProvider router={router}/>
+            </AppProvider>
         </React.StrictMode>
     );
 }
