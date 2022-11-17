@@ -7,7 +7,7 @@ export default function UserProfile() {
 
     return (
         <>
-            <p>User profile</p>
+            <p>You will hear 10 single syllable words played in the background with noises on. Choose the correct answer among the options given.</p>
         </>
     );
 }

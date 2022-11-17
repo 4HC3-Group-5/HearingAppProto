@@ -3,6 +3,7 @@ import "./HomePage.css";
 import Header from "./Header";
 import {AppContext} from "../AppProvider";
 import {Link} from "react-router-dom";
+import {LoginHandler, SignupHandler} from "./Account/Handler";
 
 function MainPage() {
     const user = React.useContext(AppContext).user;
@@ -28,7 +29,7 @@ function MainPage() {
                     <div className="text-container user-text">Sign-up</div>
                 </div>
             </button>
-
+            
             <button className="box4 btn-gradient btn-user">
                 <div className="btn-container">
                     <div className="icon-container">

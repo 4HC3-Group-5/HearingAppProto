@@ -7,7 +7,7 @@ export default function UserProfile() {
 
     return (
         <>
-            <p>User profile</p>
+            <p>Voice will come from different directions with background noises, render a 3D sphere to indicate sound per ception level</p>
         </>
     );
 }
