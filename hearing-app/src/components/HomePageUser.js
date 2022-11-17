@@ -61,15 +61,17 @@ function MainPageUser() {
             <div className="text-container">Hearing Q&As</div>
           </div>
         </button>
-
-        <button className="box2 btn-gradient btn-test">
+        <Link to={`/test`} className="box2 btn-gradient btn-test">
           <div className="btn-container">
             <div className="icon-container">
-              <span class="material-symbols-outlined test-icon">hearing</span>
+              <span class="material-symbols-outlined test-icon">
+                hearing
+              </span>
             </div>
-            <div className="text-container">Taking a test</div>
+            <div className="text-container info-text">Taking a test</div>
           </div>
-        </button>
+        </Link>
+
 
         <Link to={`/history`} className="box5 btn-gradient btn-result">
           <div className="btn-container">

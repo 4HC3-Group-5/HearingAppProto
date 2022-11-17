@@ -13,6 +13,7 @@ import HomePageUser from "./components/HomePageUser";
 import HistoryResultListPage from "./components/HistoryResult/HistoryResultListPage";
 import ErrorPage from "./components/ErrorPage";
 import Root from "./Root";
+import { PickTests } from "./components/HearingTest/PickTests";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "/history",
                 element: <HistoryResultListPage/>,
+            },
+            {
+                path: "/test",
+                element: <PickTests/>,
             },
         ],
     },

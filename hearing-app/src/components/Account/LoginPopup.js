@@ -1,5 +1,6 @@
 import React from "react";
 import "./Popup.css";
+import { Outlet, Link } from "react-router-dom";
 
 const LoginPopup = (props) => {
   return (
@@ -27,9 +28,9 @@ const LoginPopup = (props) => {
             />
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary">
+            <Link to={`/user`} type="submit" className="btn btn-primary">
               Submit
-            </button>
+            </Link>
           </div>
         </form>
       </div>
