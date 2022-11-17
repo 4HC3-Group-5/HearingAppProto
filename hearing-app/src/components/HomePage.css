@@ -74,10 +74,17 @@
   grid-row-end: 2;
 }
 
-.box3 {
+.box4 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.box5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
   grid-row-end: 3;
 }
 
@@ -142,7 +149,7 @@
 }
 
 .btn-info {
-  background: #9fd356;
+  background: #09814a;
 }
 
 .btn-test {
@@ -151,4 +158,8 @@
 
 .btn-user {
   background: #3c91e6;
+}
+
+.btn-result {
+  background: #593c8f;
 }
