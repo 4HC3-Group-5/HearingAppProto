@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./PickTests.css";
+import {Link, NavLink, Outlet} from "react-router-dom";
 
 export function PickTests() {
     return (
@@ -18,11 +19,9 @@ export function PickTests() {
             </a>
         </div>
         <div class="iconcolumn">
-            <a href="tests/PureToneTest.html">
-                <button class="icons" id="lefti"> 
+            <Link to="puretone" class="icons" id="lefti"> 
                     pure tone test
-                </button> 
-            </a>
+            </Link> 
             <a href="tests/MaskedNoiseTest.html">
                 <button class="icons" id="midi" >
                     masked icon test
