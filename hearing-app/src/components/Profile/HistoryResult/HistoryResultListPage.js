@@ -6,7 +6,7 @@ import {
     HistoryResultDetailModal2,
     HistoryResultDetailModal3
 } from "./HistoryResultDetailModal"
-import {AppContext} from "../../AppProvider";
+import {AppContext} from "../../../AppProvider";
 import {useContext} from "react";
 
 function HistoryResultListPage() {

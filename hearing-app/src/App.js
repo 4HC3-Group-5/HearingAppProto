@@ -8,12 +8,13 @@ import {
 
 import AppProvider from "./AppProvider";
 
-import "./App.css";
-
 import HomePage from "./components/HomePage";
-import HistoryResultListPage from "./components/HistoryResult/HistoryResultListPage";
+import HistoryResultListPage from "./components/Profile/HistoryResult/HistoryResultListPage";
 import ErrorPage from "./components/ErrorPage";
 import Root from "./Root";
+import ProfileRoot from "./components/Profile/ProfileRoot";
+import UserProfile from "./components/Profile/UserProfile/UserProfile";
+import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
 
 const router = createBrowserRouter([
     {
@@ -22,13 +23,27 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage/>,
         children: [
             {
-                path: "/",
+                path: "",
                 element: <HomePage/>,
             },
             {
-                path: "/history",
-                element: <HistoryResultListPage/>,
-            },
+                path: "profile",
+                element: <ProfileRoot/>,
+                children: [
+                    {
+                        path: "",
+                        element: <UserProfile/>,
+                    },
+                    {
+                        path: "history",
+                        element: <HistoryResultListPage/>,
+                    },
+                    {
+                        path: "analysis",
+                        element: <OverallAnalysis/>,
+                    }
+                ]
+            }
         ],
     },
 ]);

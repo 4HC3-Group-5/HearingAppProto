@@ -7,6 +7,7 @@ const AppProvider = ({ children }) => {
         name: null,
     });
 
+    // Definition of the global variable
     const value = {
         'user': user,
         'setUser': setUser

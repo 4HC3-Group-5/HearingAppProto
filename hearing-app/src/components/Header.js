@@ -1,15 +1,16 @@
 import {LoginHandler, SignupHandler} from "./Account/Handler";
 import React from "react";
 import {AppContext} from "../AppProvider";
+import {Link} from "react-router-dom";
 
 export default function Header() {
     const user = React.useContext(AppContext).user;
 
     const userElement = user.name ?
         (<>
-            <a className="nav-link" href="#">
+            <Link to={'/profile'} className="nav-link">
                 Hi! {user.name}
-            </a>
+            </Link>
         </>)
         : (<><a className="nav-link">
             <SignupHandler/>
@@ -21,9 +22,9 @@ export default function Header() {
 
     return (<div className="nav-bar">
         <nav className="nav sticky-top bg-light nav-pills nav-fill">
-            <a className="nav-link active" aria-current="page" href="#">
+            <Link to={'/'} className="nav-link active" aria-current="page" href="#">
                 HOME
-            </a>
+            </Link>
 
             <div className="nav-item dropdown">
                 <a

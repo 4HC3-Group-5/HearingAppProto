@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function MainPage() {
     const user = React.useContext(AppContext).user;
     const userButtons = user.name ?
-        (<><Link to={`/history`} className="box5 btn-gradient btn-result">
+        (<><Link to={`/profile/history`} className="box5 btn-gradient btn-result">
             <div className="btn-container">
                 <div className="icon-container">
               <span class="material-symbols-outlined info-icon">
