@@ -1,10 +1,20 @@
 import "./HistoryResultListPage.css";
-import {HistoryResultDetailModal1, HistoryResultDetailModal2, HistoryResultDetailModal3} from "./HistoryResultDetailModal"
+
+
+import {
+    HistoryResultDetailModal1,
+    HistoryResultDetailModal2,
+    HistoryResultDetailModal3
+} from "./HistoryResultDetailModal"
+import {AppContext} from "../../AppProvider";
+import {useContext} from "react";
 
 function HistoryResultListPage() {
+    const user = useContext(AppContext).user;
+
     return (
         <div>
-            <h2>Username, this is your history result</h2>
+            <h2>{user.name}, this is your history result</h2>
             <table className="table table-striped table-hover table-bordered result-table">
                 <thead>
                 <tr>
@@ -19,19 +29,31 @@ function HistoryResultListPage() {
                     <th scope="row">2022-09-26</th>
                     <td>Test1</td>
                     <td>Pure tone audiometry</td>
-                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test1Modal" >Result</button> </td>
+                    <td>
+                        <button className="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#test1Modal">Result
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">2022-10-11</th>
                     <td>Test2</td>
                     <td>Masked noise test</td>
-                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test2Modal" >Result</button> </td>
+                    <td>
+                        <button className="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#test2Modal">Result
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">2022-10-19</th>
                     <td>Test3</td>
                     <td>Spatial audio test</td>
-                    <td><button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test3Modal" >Result</button> </td>
+                    <td>
+                        <button className="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#test3Modal">Result
+                        </button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
