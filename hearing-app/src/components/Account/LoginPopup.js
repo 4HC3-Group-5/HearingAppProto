@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import "./Popup.css";
 import {AppContext} from "../../AppProvider";
+import {Link, NavLink, Outlet} from "react-router-dom";
 
 const LoginPopup = (props) => {
     const setUser = useContext(AppContext).setUser;
@@ -30,13 +31,13 @@ const LoginPopup = (props) => {
                         />
                     </div>
                     <div className="d-grid">
-                        <button type="submit" className="btn btn-primary" onClick={() => {
+                        <NavLink to="/profile" type="submit" className="btn btn-primary" onClick={() => {
                             setUser({
                                 name: "test"
                             })
                         }}>
                             Submit
-                        </button>
+                        </NavLink>
                     </div>
                 </form>
             </div>

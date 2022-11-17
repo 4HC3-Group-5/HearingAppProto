@@ -15,6 +15,7 @@ import Root from "./Root";
 import ProfileRoot from "./components/Profile/ProfileRoot";
 import UserProfile from "./components/Profile/UserProfile/UserProfile";
 import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
+import { PickTests } from "./components/HearingTest/PickTests";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "",
                 element: <HomePage/>,
+            },
+            {
+                path:"test",
+                element: <PickTests/>,
             },
             {
                 path: "profile",
