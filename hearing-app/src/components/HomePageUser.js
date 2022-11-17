@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.css";
+import { Outlet, Link } from "react-router-dom";
 
 function MainPageUser() {
   return (
@@ -70,7 +71,7 @@ function MainPageUser() {
           </div>
         </button>
 
-        <button className="box5 btn-gradient btn-result">
+        <Link to={`/history`} className="box5 btn-gradient btn-result">
           <div className="btn-container">
             <div className="icon-container">
               <span class="material-symbols-outlined info-icon">
@@ -79,7 +80,7 @@ function MainPageUser() {
             </div>
             <div className="text-container info-text">History Result</div>
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );
