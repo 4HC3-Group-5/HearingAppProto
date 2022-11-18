@@ -2,7 +2,8 @@ import React from "react";
 import "./HomePage.css";
 import { AppContext } from "../AppProvider";
 import { Link } from "react-router-dom";
-import { LoginHandler } from "./Account/Handler";
+import { LoginHandler2, SignupHandler2 } from "./Account/Handler";
+import { HistoryResultDetailModal3 } from "./Profile/HistoryResult/HistoryResultDetailModal";
 
 function MainPage() {
   const user = React.useContext(AppContext).user;
@@ -19,7 +20,7 @@ function MainPage() {
     </>
   ) : (
     <>
-      <button className="box3 btn-gradient btn-user">
+      {/* <button className="box3 btn-gradient btn-user" data-bs-toggle="logsign" data-bs-target="#login">
         <div className="btn-container">
           <div className="icon-container">
             <span className="material-symbols-outlined user-icon">
@@ -38,7 +39,9 @@ function MainPage() {
           </div>
           <div className="text-container user-text">Log-in</div>
         </div>
-      </button>
+      </button> */}
+      <SignupHandler2/>
+      <LoginHandler2/>
     </>
   );
 

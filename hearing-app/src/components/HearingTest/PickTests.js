@@ -21,7 +21,7 @@ export function PickTests() {
         </div> */}
 
       <div className="div2">
-        <button className="btn-gradient btn-test1">
+        <Link to="../puretone" className="btn-gradient btn-test1">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">music_note</span>
@@ -37,14 +37,14 @@ export function PickTests() {
               you hear them, plot audiograms for both left and right ear.
             </div>
           </div>
-        </button>
+        </Link>
       </div>
 
       <div className="div3">
         {/* <Link to="../masked" class="icons" id="midi">
           masked noise test
         </Link> */}
-        <button className="btn-gradient btn-test2">
+        <Link to="../masked" className="btn-gradient btn-test2">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">
@@ -57,14 +57,14 @@ export function PickTests() {
               words you hear from given options.
             </div>
           </div>
-        </button>
+        </Link>
       </div>
 
       <div className="div4">
         {/* <Link to="../spatial" class="icons" id="righti">
           spatial audio test
         </Link> */}
-        <button className="btn-gradient btn-test3">
+        <Link to="../spatial" className="btn-gradient btn-test3">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">spatial_audio</span>
@@ -75,7 +75,7 @@ export function PickTests() {
               render a 3D sphere to indicate your sound perception level.
             </div>
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );

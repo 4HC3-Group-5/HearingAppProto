@@ -7,7 +7,7 @@ const LoginPopup = (props) => {
   const setUser = useContext(AppContext).setUser;
 
   return (
-    <div className="popup-box">
+    <div className="popup-box" id="login">
       <div className="box">
         <span className="close-icon" onClick={props.handleClose}>
           x

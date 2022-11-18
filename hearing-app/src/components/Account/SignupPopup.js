@@ -3,7 +3,7 @@ import "./Popup.css";
 
 const SignupPopup = (props) => {
   return (
-    <div className="popup-box">
+    <div className="popup-box" id="signup">
       <div className="box">
         <span className="close-icon" onClick={props.handleClose}>
           x
