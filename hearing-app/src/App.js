@@ -1,10 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 
-import {
-    createBrowserRouter,
-    RouterProvider,
-    Route,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 import AppProvider from "./AppProvider";
 
@@ -21,65 +17,63 @@ import { SpatialAudioTest } from "./components/HearingTest/SpatialAudio";
 import MaskedNoiseTest from "./components/HearingTest/MaskedNoise";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Root/>,
-        errorElement: <ErrorPage/>,
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <HomePage />,
+      },
+      {
+        path: "test",
+        element: <PickTests />,
+      },
+
+      {
+        path: "puretone",
+        element: <PureToneTest />,
+      },
+      {
+        path: "masked",
+        element: <MaskedNoiseTest />,
+      },
+      {
+        path: "spatial",
+        element: <SpatialAudioTest />,
+      },
+
+      {
+        path: "profile",
+        element: <ProfileRoot />,
         children: [
-            {
-                path: "",
-                element: <HomePage/>,
-            },
-            {
-                path:"test",
-                element: <PickTests/>,},
-                
-            {
-                path:"puretone",
-                element: <PureToneTest/>,
-            },
-            {
-                path:"masked",
-                element: <MaskedNoiseTest/>,
-            },
-            {
-                path:"spatial",
-                element: <SpatialAudioTest/>,
-            },
-                
-            {
-                path: "profile",
-                element: <ProfileRoot/>,
-                children: [
-                    {
-                        path: "",
-                        element: <UserProfile/>,
-                    },
-                    {
-                        path: "history",
-                        element: <HistoryResultListPage/>,
-                    },
-                    {
-                        path: "analysis",
-                        element: <OverallAnalysis/>,
-                    }
-                ]
-            }
+          {
+            path: "",
+            element: <UserProfile />,
+          },
+          {
+            path: "history",
+            element: <HistoryResultListPage />,
+          },
+          {
+            path: "analysis",
+            element: <OverallAnalysis />,
+          },
         ],
-    },
+      },
+    ],
+  },
 ]);
 
-
-
 function App() {
-
-    return (
-        <React.StrictMode>
-            <AppProvider>
-                <RouterProvider router={router}/>
-            </AppProvider>
-        </React.StrictMode>
-    );
+  return (
+    <React.StrictMode>
+      <AppProvider>
+        <RouterProvider router={router} />
+      </AppProvider>
+    </React.StrictMode>
+  );
 }
 
 export default App;
