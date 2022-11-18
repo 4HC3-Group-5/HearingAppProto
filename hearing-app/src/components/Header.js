@@ -15,17 +15,14 @@ export default function Header() {
                 <span>{user.name}</span>
             </Link>
         </div>)
-        : (<><a className="nav-link">
+        : (<div className={"nav-link userNavitem"}>
             <SignupHandler/>
-        </a>
-            <a className="nav-link">
-                <LoginHandler/>
-            </a>
-        </>)
+            <LoginHandler/>
+        </div>)
 
     return (<div className="nav-bar">
         <nav className="nav sticky-top bg-light nav-pills nav-fill">
-            <Link to={'/'} className="nav-link active" aria-current="page" href="#">
+            <Link to={'/'} className="nav-link" aria-current="page" href="#">
                 HOME
             </Link>
 

@@ -11,15 +11,15 @@ export function LoginHandler() {
   };
 
   return (
-    <div>
+    <>
       <input
-        className="nav-btn"
+        className="nav-btn btn btn-primary"
         type="button"
         value="LOG-IN"
         onClick={toggleLoginPopup}
       />
       {LoginIsOpen && <LoginPopup handleClose={toggleLoginPopup} />}
-    </div>
+    </>
   );
 }
 
@@ -56,15 +56,15 @@ export function SignupHandler() {
   };
 
   return (
-    <div>
+    <>
       <input
-        className="nav-btn"
+        className="nav-btn btn btn-success"
         type="button"
         value="SIGN-UP"
         onClick={toggleSignupPopup}
       />
       {SignupIsOpen && <SignupPopup handleClose={toggleSignupPopup} />}
-    </div>
+    </>
   );
 }
 

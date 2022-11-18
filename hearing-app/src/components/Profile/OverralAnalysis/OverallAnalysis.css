@@ -1,0 +1,13 @@
+.overallAnalysis {
+
+}
+
+.overallAnalysis > .nav {
+    height: 3em;
+}
+
+.overallAnalysis > .nav .nav-link {
+    height: 3em;
+    line-height: 1.6em;
+    text-align: center;
+}
