@@ -1,28 +1,136 @@
-.icons1 {
-    text-align: center;
-    display:inline-block;
-    width: 400px;
-    height: 400px;
-    margin: auto;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+
+  padding: 50px 50px 0px 50px;
 }
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.div2 {
+  grid-area: 2 / 1 / 4 / 2;
+}
+.div3 {
+  grid-area: 2 / 2 / 4 / 3;
+}
+.div4 {
+  grid-area: 2 / 3 / 4 / 4;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  color: #2e2d4d;
+}
+
+.btn-container1 {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  color: #1f271b;
+}
+
+.icon-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  height: 200px;
+}
+
+.icon {
+  font-size: 200px;
+}
+
+.text-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  font-size: 30px;
+}
+
+.des-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  font-size: 20px;
+}
+
+.des1 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn-test1:hover .des1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.des2 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn-test2:hover .des2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.des3 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn-test3:hover .des3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-test1 {
+  background-color: #a3c4bc;
+}
+
+.btn-test2 {
+  background-color: #bfd7b5;
+}
+
+.btn-test3 {
+  background-color: #e1d89f;
+}
+
+/* .icons1 {
+  text-align: center;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+} */
 img1 {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 }
 label {
-    padding-right: 10px;
-    font-size: 1rem;
+  padding-right: 10px;
+  font-size: 1rem;
 }
 #myProgress {
-    width: 100%;
-    background-color: grey;
+  width: 100%;
+  background-color: grey;
 }
 
 #myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
+  width: 1%;
+  height: 30px;
+  background-color: green;
 }
 .grid-container {
-    display: grid;
+  display: grid;
 }

@@ -10,7 +10,7 @@ export function HistoryResultDetailInfo1() {
                     <div className="mask1"></div>
                     <span className="value1">46</span>
                 </div>
-                <div>Score</div>
+                <div className="text-center">Score</div>
             </div>
             <hr/>
             <div className="container text-center">
@@ -31,9 +31,9 @@ export function HistoryResultDetailInfo1() {
             </div>
             <hr/>
             <div className="row">
-                <div className="col-4">
+                <div className="col-4 text-center">
                     Your Score
-                    <div>46</div>
+                    <div className="text-center">46</div>
                 </div>
                 <div className="col-8">
                     You achieved better score from last time, it is still worse than the score of you age group
@@ -98,7 +98,7 @@ export function HistoryResultDetailInfo2() {
                     <div className="mask2"></div>
                     <span className="value2">73</span>
                 </div>
-                <div>Score</div>
+                <div className="text-center">Score</div>
             </div>
             <hr/>
             <div className="container text-center">
@@ -119,11 +119,11 @@ export function HistoryResultDetailInfo2() {
             </div>
             <hr/>
             <div className="row">
-                <div className="col-4">
+                <div className="col-4 text-center">
                     Your Score
-                    <div>73</div>
+                    <div className="text-center">73</div>
                 </div>
-                <div className="col-8">
+                <div className="col-8 ">
                     You achieved better score from last time, it is still worse than the score of you age group
                 </div>
             </div>
@@ -189,7 +189,7 @@ export function HistoryResultDetailInfo3() {
                     <div className="mask3"></div>
                     <span className="value3">90</span>
                 </div>
-                <div>Score</div>
+                <div className="text-center">Score</div>
             </div>
             <hr/>
             <div className="container text-center">
@@ -210,9 +210,9 @@ export function HistoryResultDetailInfo3() {
             </div>
             <hr/>
             <div className="row">
-                <div className="col-4">
+                <div className="col-4 text-center">
                     Your Score
-                    <div>90</div>
+                    <div className="text-center">90</div>
                 </div>
                 <div className="col-8">
                     You achieved the same score from last time, it is the average score from your age group. Nice job!

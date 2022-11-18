@@ -40,11 +40,19 @@
   font-size: 20px;
 }
 
+h3 {
+  color: #001a23;
+}
+
+.mb-3 {
+  color: #001a23;
+}
+
 * {
   box-sizing: border-box;
 }
 body {
-  background: #ddf0ff !important;
+  background: #f0eff4 !important;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
