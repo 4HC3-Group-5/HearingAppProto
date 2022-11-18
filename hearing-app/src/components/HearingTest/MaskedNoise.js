@@ -1,8 +1,8 @@
 import {useContext} from "react";
-import {AppContext} from "../../../AppProvider";
+import {AppContext} from "../../AppProvider";
 import {Outlet} from "react-router-dom";
 
-export default function UserProfile() {
+export default function MaskedNoiseTest() {
     const user = useContext(AppContext).user;
 
     return (

@@ -17,6 +17,8 @@ import UserProfile from "./components/Profile/UserProfile/UserProfile";
 import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
 import { PickTests } from "./components/HearingTest/PickTests";
 import PureToneTest from "./components/HearingTest/PureTone";
+import { SpatialAudioTest } from "./components/HearingTest/SpatialAudio";
+import MaskedNoiseTest from "./components/HearingTest/MaskedNoise";
 
 const router = createBrowserRouter([
     {
@@ -30,14 +32,21 @@ const router = createBrowserRouter([
             },
             {
                 path:"test",
-                element: <PickTests/>,
-                children: [
-                    {
-                        path:"puretone",
-                        element: <PureToneTest/>,
-                    },
-                ]
+                element: <PickTests/>,},
+                
+            {
+                path:"puretone",
+                element: <PureToneTest/>,
             },
+            {
+                path:"masked",
+                element: <MaskedNoiseTest/>,
+            },
+            {
+                path:"spatial",
+                element: <SpatialAudioTest/>,
+            },
+                
             {
                 path: "profile",
                 element: <ProfileRoot/>,

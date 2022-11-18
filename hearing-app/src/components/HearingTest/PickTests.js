@@ -19,19 +19,15 @@ export function PickTests() {
             </a>
         </div>
         <div class="iconcolumn">
-            <Link to="puretone" class="icons" id="lefti"> 
+            <Link to="../puretone" class="icons" id="lefti"> 
                     pure tone test
             </Link> 
-            <a href="tests/MaskedNoiseTest.html">
-                <button class="icons" id="midi" >
-                    masked icon test
-                </button> 
-            </a>
-            <a href="tests/SpatialAudioTest.html">
-                <button class="icons" id="righti"> 
+            <Link to="../masked" class="icons" id="midi"> 
+                    masked noise test
+            </Link> 
+            <Link to="../spatial" class="icons" id="righti"> 
                     spatial audio test
-                </button> 
-            </a>
+            </Link> 
         </div>
     </div>
     );

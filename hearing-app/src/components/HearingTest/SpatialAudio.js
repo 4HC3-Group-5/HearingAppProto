@@ -1,13 +1,31 @@
-import {useContext} from "react";
-import {AppContext} from "../../../AppProvider";
+import React, { useState } from "react";
 import {Outlet} from "react-router-dom";
+import {Link} from "react-router-dom";
 
-export default function UserProfile() {
-    const user = useContext(AppContext).user;
-
+export function SpatialAudioTest() {
     return (
-        <>
-            <p>Voice will come from different directions with background noises, render a 3D sphere to indicate sound per ception level</p>
-        </>
+        <div className="SpatialAudio">
+
+                <div className="main-menu">
+                    <button className="box1 btn-gradient btn-info">
+                        <div className="btn-container">
+                            <div className="icon-container">
+                                <span class="material-symbols-outlined info-icon">info</span>
+                            </div>
+                            <div className="text-container">Hearing Q&As</div>
+                        </div>
+                    </button>
+
+                    <Link to={`/test`} className="box2 btn-gradient btn-test">
+                        <div className="btn-container">
+                            <div className="icon-container">
+                                <span class="material-symbols-outlined test-icon">hearing</span>
+                            </div>
+                            <div className="text-container">Taking a test</div>
+                        </div>
+                    </Link>
+
+                </div>
+            </div>
     );
 }
