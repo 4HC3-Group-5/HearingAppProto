@@ -1,3 +1,5 @@
+import './Header.css';
+
 import {LoginHandler, SignupHandler} from "./Account/Handler";
 import React from "react";
 import {AppContext} from "../AppProvider";
@@ -7,11 +9,12 @@ export default function Header() {
     const user = React.useContext(AppContext).user;
 
     const userElement = user.name ?
-        (<>
+        (<div className={"nav-item userNavitem"}>
             <Link to={'/profile'} className="nav-link">
-                Hi! {user.name}
+                <img src='https://img.icons8.com/android/512/user.png' className={'userIcon bg-light'} alt={'avatar'}/>
+                <span>{user.name}</span>
             </Link>
-        </>)
+        </div>)
         : (<><a className="nav-link">
             <SignupHandler/>
         </a>
@@ -57,7 +60,6 @@ export default function Header() {
             <a className="nav-link" href="#">
                 HEARING Q&As
             </a>
-
             {userElement}
 
         </nav>
