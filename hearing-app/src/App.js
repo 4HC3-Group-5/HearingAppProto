@@ -15,6 +15,7 @@ import { PickTests } from "./components/HearingTest/PickTests";
 import PureToneTest from "./components/HearingTest/PureTone";
 import { SpatialAudioTest } from "./components/HearingTest/SpatialAudio";
 import MaskedNoiseTest from "./components/HearingTest/MaskedNoise";
+import CheckEnvironment from "./components/HearingTest/CheckEnvironment";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,10 @@ const router = createBrowserRouter([
         path: "spatial",
         element: <SpatialAudioTest />,
       },
-
+      {
+        path: "check",
+        element: <CheckEnvironment />,
+      },
       {
         path: "profile",
         element: <ProfileRoot />,
