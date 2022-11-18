@@ -92,6 +92,7 @@
 .btn-container {
   display: grid;
   grid-template-rows: 2fr 1fr;
+  color: #2e2d4d;
 }
 
 .icon-container {
@@ -156,17 +157,17 @@
 }
 
 .btn-info {
-  background: #09814a;
+  background: #90c7f0;
 }
 
 .btn-test {
-  background: #f46036;
+  background: #88ddf1;
 }
 
 .btn-user {
-  background: #3c91e6;
+  background: #c3cae2;
 }
 
 .btn-result {
-  background: #593c8f;
+  background: #c3cae2;
 }
