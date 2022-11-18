@@ -4,7 +4,7 @@
     align-items: stretch;
 }
 
-.leftSidebar {
+.profileRoot > .leftSidebar {
     flex-basis: 15%;
     flex-grow: 0;
     height: 100%;
@@ -16,7 +16,7 @@
     background: white;
 }
 
-.leftSidebar > .nav-link {
+.profileRoot > .leftSidebar > .nav-link {
     height: 3em;
     line-height: 2em;
     width: auto;
@@ -24,7 +24,7 @@
     border-radius: 0;
 }
 
-.rightPanel {
+.profileRoot > .rightPanel {
     flex-grow: 1;
     padding: 0.5em;
 }
