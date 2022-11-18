@@ -7,23 +7,27 @@ export default function CheckEnvironment() {
 
     return (
         <div className="SpatialAudio">
+                <h3>Instructions</h3>
+                <p>This is the page to set your devices.</p>
 
                 <div className="main-menu">
-                    <button className="box1 btn-gradient btn-info">
+                    <Link to={`/test`} className="box2 btn-gradient btn-test">
                         <div className="btn-container">
                             <div className="icon-container">
-                                <span class="material-symbols-outlined info-icon">info</span>
+                                <span class="material-symbols-outlined test-icon">hearing</span>
                             </div>
-                            <div className="text-container">Hearing Q&As</div>
+                            <div className="text-container">Click the button if you hear the sound.</div>
                         </div>
-                    </button>
+                    </Link>
+                </div>
+                <div>
 
                     <Link to={`/test`} className="box2 btn-gradient btn-test">
                         <div className="btn-container">
                             <div className="icon-container">
                                 <span class="material-symbols-outlined test-icon">hearing</span>
                             </div>
-                            <div className="text-container">Taking a test</div>
+                            <div className="text-container">Start the test</div>
                         </div>
                     </Link>
 
