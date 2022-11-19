@@ -8,10 +8,27 @@ import {
 } from "./HistoryResultDetailModal"
 import {AppContext} from "../../../AppProvider";
 import {useContext} from "react";
+import {results} from "../../../data/fake_data"
 
 function HistoryResultListPage() {
     const user = useContext(AppContext).user;
 
+    const result_rows = [];
+    for (let i = 0; i < results.length; i++) {
+        const currentResult = results[i];
+        result_rows.push(
+            <tr>
+                <th scope="row">{currentResult.date}</th>
+                <td>{currentResult.test_name}</td>
+                <td>{currentResult.type}</td>
+                <td>
+                    <button className="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#test1Modal">Result
+                    </button>
+                </td>
+            </tr>
+    );
+    }
     return (
         <div>
             <h2>{user.name}, this is your history result</h2>
@@ -25,16 +42,7 @@ function HistoryResultListPage() {
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">2022-09-26</th>
-                    <td>Test1</td>
-                    <td>Pure tone audiometry</td>
-                    <td>
-                        <button className="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#test1Modal">Result
-                        </button>
-                    </td>
-                </tr>
+                {result_rows}
                 <tr>
                     <th scope="row">2022-10-11</th>
                     <td>Test2</td>

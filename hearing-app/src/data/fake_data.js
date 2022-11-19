@@ -1,6 +1,7 @@
 export const results = [
     {
         "id": 1,
+        "test_name":"Test1",
         "username": "Alice",
         "type": "Pure tone audiometry",
         "date": "2022-09-26",
@@ -68,6 +69,7 @@ export const results = [
     },
     {
         "id": 2,
+        "test_name":"Test2",
         "username": "Alice",
         "type": "Masked noise test",
         "date": "2022-10-11",
@@ -92,6 +94,7 @@ export const results = [
     },
     {
         "id": 3,
+        "test_name":"Test3",
         "username": "Alice",
         "type": "Spatial audio test",
         "date": "2022-10-19",
