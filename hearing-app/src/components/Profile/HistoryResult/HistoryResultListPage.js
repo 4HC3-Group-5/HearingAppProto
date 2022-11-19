@@ -1,11 +1,7 @@
 import "./HistoryResultListPage.css";
 
 
-import {
-    HistoryResultDetailModal1,
-    HistoryResultDetailModal2,
-    HistoryResultDetailModal3
-} from "./HistoryResultDetailModal"
+import {HistoryResultDetailModal} from "./HistoryResultDetailModal"
 import {AppContext} from "../../../AppProvider";
 import {useContext} from "react";
 import {results} from "../../../data/fake_data"
@@ -16,6 +12,7 @@ function HistoryResultListPage() {
     const result_rows = [];
     for (let i = 0; i < results.length; i++) {
         const currentResult = results[i];
+        const currentModalId = "#Modal" + currentResult.id
         result_rows.push(
             <tr>
                 <th scope="row">{currentResult.date}</th>
@@ -23,7 +20,7 @@ function HistoryResultListPage() {
                 <td>{currentResult.type}</td>
                 <td>
                     <button className="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#test1Modal">Result
+                            data-bs-target={currentModalId}>Result
                     </button>
                 </td>
             </tr>
@@ -65,9 +62,7 @@ function HistoryResultListPage() {
                 </tr>
                 </tbody>
             </table>
-            <HistoryResultDetailModal1/>
-            <HistoryResultDetailModal2/>
-            <HistoryResultDetailModal3/>
+            <HistoryResultDetailModal/>
         </div>
 
     );
