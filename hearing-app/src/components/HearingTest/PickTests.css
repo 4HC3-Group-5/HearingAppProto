@@ -1,4 +1,4 @@
-.parent {
+.test-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px 1fr 1fr;
@@ -8,16 +8,16 @@
   padding: 50px 50px 0px 50px;
 }
 
-.div1 {
+.test-div1 {
   grid-area: 1 / 1 / 2 / 4;
 }
-.div2 {
+.test-div2 {
   grid-area: 2 / 1 / 4 / 2;
 }
-.div3 {
+.test-div3 {
   grid-area: 2 / 2 / 4 / 3;
 }
-.div4 {
+.test-div4 {
   grid-area: 2 / 3 / 4 / 4;
 }
 

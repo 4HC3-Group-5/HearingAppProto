@@ -40,8 +40,12 @@ function MainPage() {
           <div className="text-container user-text">Log-in</div>
         </div>
       </button> */}
-      <SignupHandler2/>
-      <LoginHandler2/>
+      <div className="box3">
+        <SignupHandler2 />
+      </div>
+      <div className="box4">
+        <LoginHandler2 />
+      </div>
     </>
   );
 

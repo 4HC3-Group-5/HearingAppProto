@@ -32,7 +32,12 @@ export function LoginHandler2() {
 
   return (
     <div id="login">
-      <button className="box3 btn-gradient btn-user" data-bs-toggle="logsign" data-bs-target="#login" onClick={toggleLoginPopup}>
+      <button
+        className="box4 btn-gradient btn-user"
+        data-bs-toggle="logsign"
+        data-bs-target="#login"
+        onClick={toggleLoginPopup}
+      >
         <div className="btn-container">
           <div className="icon-container">
             <span className="material-symbols-outlined user-icon">
@@ -42,7 +47,7 @@ export function LoginHandler2() {
           <div className="text-container user-text">Log-in</div>
         </div>
       </button>
-      
+
       {LoginIsOpen && <LoginPopup handleClose={toggleLoginPopup} />}
     </div>
   );
@@ -77,7 +82,12 @@ export function SignupHandler2() {
 
   return (
     <div>
-      <button className="box3 btn-gradient btn-user" data-bs-toggle="logsign" data-bs-target="#signup" onClick={toggleSignupPopup}>
+      <button
+        className="btn-gradient btn-user"
+        data-bs-toggle="logsign"
+        data-bs-target="#signup"
+        onClick={toggleSignupPopup}
+      >
         <div className="btn-container">
           <div className="icon-container">
             <span className="material-symbols-outlined user-icon">

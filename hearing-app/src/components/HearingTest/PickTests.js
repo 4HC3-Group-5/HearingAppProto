@@ -4,8 +4,8 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 
 export function PickTests() {
   return (
-    <div className="PickTests parent">
-      <div className="div1">
+    <div className="test-parent">
+      <div className="test-div1">
         <label for="file">Test progress:</label>
         <div class="process" id="myProgress">
           <div id="myBar"></div>
@@ -20,7 +20,7 @@ export function PickTests() {
             </a>
         </div> */}
 
-      <div className="div2">
+      <div className="test-div2">
         <Link to="../puretone" className="btn-gradient btn-test1">
           <div className="btn-container1">
             <div className="icon-container">
@@ -40,7 +40,7 @@ export function PickTests() {
         </Link>
       </div>
 
-      <div className="div3">
+      <div className="test-div3">
         {/* <Link to="../masked" class="icons" id="midi">
           masked noise test
         </Link> */}
@@ -60,7 +60,7 @@ export function PickTests() {
         </Link>
       </div>
 
-      <div className="div4">
+      <div className="test-div4">
         {/* <Link to="../spatial" class="icons" id="righti">
           spatial audio test
         </Link> */}

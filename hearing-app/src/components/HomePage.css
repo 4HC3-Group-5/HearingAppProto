@@ -33,8 +33,7 @@
 }
 
 .nav-btn:hover {
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav-btn:active {
@@ -167,6 +166,9 @@
 
 .btn-user {
   background: #c3cae2;
+  width: 350px;
+  height: 300px;
+  padding: 90px 0px 0px 0px;
 }
 
 .btn-result {
