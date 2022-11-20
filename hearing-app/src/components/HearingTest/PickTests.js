@@ -36,7 +36,7 @@ export function PickTests() {
         </div> */}
 
       <div className="test-div2">
-        <Link to="../puretone" className="btn-gradient btn-test1">
+        <Link to="../puretone-check" className="btn-gradient btn-test1">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">music_note</span>

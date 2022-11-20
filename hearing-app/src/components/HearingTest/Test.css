@@ -1,0 +1,45 @@
+.test1-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px 0.5fr 1fr;
+
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+
+  padding: 50px 50px 0px 50px;
+}
+
+.test1-div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.test1-div2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.test1-div3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.test1-div4 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.test-ins {
+  font-size: 50px;
+}
+
+.btn-hold {
+  background-color: #4cb944;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn-next {
+  background-color: #1098f7;
+  float: right;
+}
+
+.hold-container {
+  font-size: 50px;
+}
