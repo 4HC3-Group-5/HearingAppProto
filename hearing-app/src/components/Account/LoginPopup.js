@@ -20,6 +20,7 @@ const LoginPopup = (props) => {
               type="email"
               className="form-control"
               placeholder="Enter email"
+              defaultValue="user1@example.com"
             />
           </div>
           <div className="mb-3">
@@ -28,21 +29,21 @@ const LoginPopup = (props) => {
               type="password"
               className="form-control"
               placeholder="Enter password"
+              defaultValue="password"
             />
           </div>
           <div className="d-grid">
-            <NavLink
-              to="/profile"
+            <button
               type="submit"
               className="btn btn-primary"
               onClick={() => {
                 setUser({
-                  name: "test",
+                  name: "User1",
                 });
               }}
             >
               Submit
-            </NavLink>
+            </button>
           </div>
         </form>
       </div>

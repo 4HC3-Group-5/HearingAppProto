@@ -10,18 +10,18 @@ export default function OverallAnalysis() {
 
     return (
         <div className={'overallAnalysis'}>
-            <div className="nav nav-tabs">
+            <div className="nav nav-tabs analysisNav">
                 <div className="nav-item">
-                    <NavLink to={'/profile/'} className="nav-link">Pure Tone</NavLink>
+                    <NavLink to={'/profile/analysis'} end={true} className="nav-link">Pure Tone</NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={'/profile/history'} className="nav-link">Masked Noise</NavLink>
+                    <NavLink to={'/profile/analysis/maskednoise'} className="nav-link">Masked Noise</NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={'/profile/analysis'} className="nav-link">Spartial Audio</NavLink>
+                    <NavLink to={'/profile/analysis/spartialaudio'} className="nav-link">Spartial Audio</NavLink>
                 </div>
             </div>
-            <div>
+            <div className={"analysisView"}>
                 <Outlet/>
             </div>
         </div>

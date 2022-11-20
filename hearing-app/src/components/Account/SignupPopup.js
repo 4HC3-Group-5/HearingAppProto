@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Popup.css";
+import {AppContext} from "../../AppProvider";
 
 const SignupPopup = (props) => {
+  const setUser = useContext(AppContext).setUser;
   return (
     <div className="popup-box" id="signup">
       <div className="box">
@@ -16,6 +18,7 @@ const SignupPopup = (props) => {
               type="text"
               className="form-control"
               placeholder="Username"
+              defaultValue="User1"
             />
           </div>
           <div className="mb-3">
@@ -24,6 +27,7 @@ const SignupPopup = (props) => {
               type="email"
               className="form-control"
               placeholder="Enter email"
+              defaultValue="user1@example.com"
             />
           </div>
           <div className="mb-3">
@@ -32,10 +36,13 @@ const SignupPopup = (props) => {
               type="password"
               className="form-control"
               placeholder="Enter password"
+              defaultValue="password"
             />
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary" onClick={() => setUser({
+                name: "User1",
+            })}>
               Sign Up
             </button>
           </div>

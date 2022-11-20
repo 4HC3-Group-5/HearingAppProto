@@ -1,0 +1,45 @@
+.resultItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    user-select: none;
+}
+
+.resultItem:hover {
+    background: var(--bs-gray-200);
+}
+
+.resultItem .icon {
+    font-size: 3rem;
+    flex-basis: 3rem;
+    flex-grow: 0;
+}
+
+.resultItem input[type="checkbox"] {
+    flex-basis: 2.5em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.resultItem .resultId {
+    color: var(--bs-gray-500);
+}
+
+.resultItem .resultId:before {
+    content: '#';
+}
+
+.resultItem > .resultInfo {
+    flex-grow: 1;
+}
+
+.resultItem > .resultScore {
+    font-size: 2em;
+}
+
+
+
+.resultItem .resultType {
+    font-weight: bold;
+}
