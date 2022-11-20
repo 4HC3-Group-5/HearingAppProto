@@ -200,3 +200,14 @@
 .card{
     --bs-card-cap-padding-x: 0.4rem
 }
+
+.resultInfoPage{
+    margin: 3% 5%;
+}
+
+.rightEndButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}

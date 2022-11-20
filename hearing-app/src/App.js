@@ -25,6 +25,7 @@ import SpartialAudioAnalysisView
     from "./components/Profile/OverralAnalysis/AnalysisViews/SpartialAudioAnalysisView";
 import HistoryResult from "./components/Profile/HistoryResult/HistoryResult";
 import {
+    HistoryResultDetailInfo,
     HistoryResultDetailInfo1
 } from "./components/Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailInfo";
 
@@ -89,7 +90,7 @@ const router = createBrowserRouter([
                             },
                             {
                                 path: ":id",
-                                element: <HistoryResultDetailInfo1/>,
+                                element: <HistoryResultDetailInfo/>,
                             }
                         ]
                     },
