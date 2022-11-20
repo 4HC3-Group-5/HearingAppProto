@@ -14,7 +14,7 @@ export default function AnalysisResultList(props) {
 
 
     return (
-        <div className="resultList list-group">
+        <div className="analysisResultList list-group">
             {results.map((result) => (
                 <AnalysisResultListItem key={result.id} result={result} selectedResultIds={selectedResultIds} setSelectedResultsIds={setSelectedResultsIds}/>
             ))}

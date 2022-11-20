@@ -18,7 +18,7 @@ export default function ProfileRoot() {
         <div className={'profileRoot'}>
             <div className={'leftSidebar nav nav-pills'}>
                 <NavLink to={'/profile/'} className="nav-link">User Profile</NavLink>
-                <NavLink to={'/profile/history/'} className="nav-link">Test History</NavLink>
+                <NavLink to={'/profile/history'} className="nav-link">Test History</NavLink>
                 <NavLink to={'/profile/analysis'} className="nav-link">Overall
                     Analysis</NavLink>
             </div>

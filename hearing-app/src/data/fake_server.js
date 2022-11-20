@@ -14,7 +14,7 @@ export class fakeServer {
         return results.filter((item) => item.type === type);
     }
 
-    static filter_result_by_id(result, id) {
+    static get_result_by_id(id) {
         return results.find((item) => item.id === id);
     }
 }

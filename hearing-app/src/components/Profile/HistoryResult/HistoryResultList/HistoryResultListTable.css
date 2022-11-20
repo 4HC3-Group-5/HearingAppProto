@@ -1,0 +1,56 @@
+.historyListContainer .resultItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    user-select: none;
+}
+
+
+
+.historyListContainer .resultItemLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.historyListContainer .resultItemRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.historyListContainer .resultItem .icon {
+    font-size: 3rem;
+    flex-basis: 3rem;
+    flex-grow: 0;
+    margin-right: 0.2em;
+}
+
+.historyListContainer .resultItem .resultType {
+    font-weight: bold;
+    font-size: 1.2em;
+
+    flex-basis: 8em;
+}
+
+.historyListContainer .resultItem .resultId {
+    font-size: 1.2em;
+    flex-basis: 2em;
+}
+
+.historyListContainer .resultItem .resultDate {
+    font-size: 1.2em;
+    flex-basis: 10em;
+}
+
+.historyListContainer .resultItem .resultScore {
+    font-size: 2em;
+}
+
+

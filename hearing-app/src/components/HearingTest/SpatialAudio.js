@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {Outlet} from "react-router-dom";
 import {Link} from "react-router-dom";
-import { HistoryResultDetailModal3 } from "../Profile/HistoryResult/HistoryResultDetailModal";
+import { HistoryResultDetailModal3 } from "../Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailModal";
 
 export function SpatialAudioTest() {
     return (
@@ -20,8 +20,8 @@ export function SpatialAudioTest() {
                                 </div>
                                 <div className="text-container">Check Environment</div>
                             </div>
-                </Link>    
-            </div> 
+                </Link>
+            </div>
             <div>
                 <Link to={`/spatial2`} className="box4 btn-gradient btn-test">
                             <div className="btn-container">
@@ -32,7 +32,7 @@ export function SpatialAudioTest() {
                             </div>
                 </Link>
             </div>
-            
+
         </>
     );
 }
@@ -54,14 +54,14 @@ export function SpatialAudioTest2() {
                                 </div>
                                 <div className="text-container">Something will happen!</div>
                             </div>
-                </Link>    
-            </div> 
+                </Link>
+            </div>
             <button className="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#test3Modal">Test is done! see your result.
             </button>
 
             <HistoryResultDetailModal3/>
-            
+
         </>
     );
 }

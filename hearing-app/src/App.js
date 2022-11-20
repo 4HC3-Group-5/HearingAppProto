@@ -5,7 +5,8 @@ import {createBrowserRouter, RouterProvider, Route} from "react-router-dom";
 import AppProvider from "./AppProvider";
 
 import HomePage from "./components/HomePage";
-import HistoryResultListPage from "./components/Profile/HistoryResult/HistoryResultListPage";
+import HistoryResultListPage
+    from "./components/Profile/HistoryResult/HistoryResultList/HistoryResultListPage";
 import ErrorPage from "./components/ErrorPage";
 import Root from "./Root";
 import ProfileRoot from "./components/Profile/ProfileRoot";
@@ -22,6 +23,10 @@ import MaskedNoiseAnalysisView
     from "./components/Profile/OverralAnalysis/AnalysisViews/MaskedNoiseAnalysisView";
 import SpartialAudioAnalysisView
     from "./components/Profile/OverralAnalysis/AnalysisViews/SpartialAudioAnalysisView";
+import HistoryResult from "./components/Profile/HistoryResult/HistoryResult";
+import {
+    HistoryResultDetailInfo1
+} from "./components/Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailInfo";
 
 const router = createBrowserRouter([
     {
@@ -76,7 +81,17 @@ const router = createBrowserRouter([
                     },
                     {
                         path: "history",
-                        element: <HistoryResultListPage/>,
+                        element: <HistoryResult/>,
+                        children: [
+                            {
+                                path: "",
+                                element: <HistoryResultListPage/>,
+                            },
+                            {
+                                path: ":id",
+                                element: <HistoryResultDetailInfo1/>,
+                            }
+                        ]
                     },
                     {
                         path: "analysis",

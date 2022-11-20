@@ -1,8 +1,8 @@
 import "./HistoryResultDetailModal.css";
 import {HistoryResultDetailInfo1, HistoryResultDetailInfo2, HistoryResultDetailInfo3} from "./HistoryResultDetailInfo"
 import {useContext} from "react";
-import {AppContext} from "../../../AppProvider";
-import {results} from "../../../data/fake_data";
+import {AppContext} from "../../../../AppProvider";
+import {results} from "../../../../data/fake_data";
 
 export function HistoryResultDetailModal() {
     const all_Modal = [];

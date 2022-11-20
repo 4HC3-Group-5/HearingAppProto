@@ -1,0 +1,73 @@
+.historyResultPage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+h2{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.historyListContainer {
+    width: 80%;
+}
+
+.historyListContainer .resultItem {
+    cursor: pointer;
+}
+
+.historyResultPage .testTypeCheckboxLabel {
+    width: 16em;
+    height: 6em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+
+}
+
+.historyResultPage input[type="checkbox"] {
+    display: none;
+}
+
+.historyResultPage input[type="checkbox"]:checked + label {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.historyResultPage .testTypeCheckboxLabel {
+    border-radius: inherit;
+}
+
+.historyResultPage .testTypeCheckboxLabel .icon {
+    font-size: 3rem;
+}
+
+.historyResultPage .testTypeCheckboxLabel .resultType {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.historyResultPage .historyResultPageResultTypeOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2em 0 2em 0;
+}
+
+.historyResultPage .historyResultPageResultTypeOptions > .list-group {
+    margin: 0 1em;
+}
