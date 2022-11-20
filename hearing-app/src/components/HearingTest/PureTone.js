@@ -13,9 +13,23 @@ export function PureToneTest() {
       </div>
 
       <div className="div1">
-        <label for="file">Test progress:</label>
-        <div class="process" id="myProgress">
-          <div id="myBar"></div>
+        <div class="stepper-wrapper">
+          <div class="stepper-item completed">
+            <div class="step-counter">1</div>
+            <div class="step-name">Select a Test</div>
+          </div>
+          <div class="stepper-item active">
+            <div class="step-counter">2</div>
+            <div class="step-name">Check Environment</div>
+          </div>
+          <div class="stepper-item">
+            <div class="step-counter">3</div>
+            <div class="step-name">Complete Test</div>
+          </div>
+          <div class="stepper-item">
+            <div class="step-counter">4</div>
+            <div class="step-name">See Result</div>
+          </div>
         </div>
       </div>
 
