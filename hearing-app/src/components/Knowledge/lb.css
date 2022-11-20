@@ -114,6 +114,14 @@
      background: #fff;
  }
 
+ #focus .preNext {
+     width: 45px;
+     height: 100px;
+     position: absolute;
+     top: 90px;
+     background: url(../../../public/sprite.png) no-repeat 0 0;
+     cursor: pointer;
+ }
 
  #focus .pre {
      left: 0;

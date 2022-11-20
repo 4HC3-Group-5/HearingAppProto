@@ -1,26 +1,18 @@
 import {useRouteError} from "react-router-dom";
 import "./css.css";
 import "./lb.css";
+import {KnowledgeFixedContent} from "./KnowledgeFixedContent";
 
 export default function AlreadyPage() {
 
     return (
-        <div>
-            <div className="alreadyImg">
-                <div id="focus">
-                    <ul>
-                        <li><a href="#" target="_blank"><img src="/01.jpg" width="960" alt="image"/></a></li>
-                        <li><a href="#" target="_blank"><img src="/02.jpg" width="960" alt="image"/></a></li>
-                        <li><a href="#" target="_blank"><img src="/03.jpg" width="960" alt="image"/></a></li>
-                        <li><a href="#" target="_blank"><img src="/04.jpg" width="960" alt="image"/></a></li>
-                        <li><a href="#" target="_blank"><img src="/05.jpg" width="960" alt="image"/></a></li>
-                    </ul>
-                </div>
+        <div className="knowledgeBody">
+            <div >
+                <KnowledgeFixedContent/>
             </div>
-            <div className="mw">Knowledge</div>
-            <div id="main">
-                <div id="main_im">
-                    <div className="nav"><a href="hearingLoss.html">Hearing Loss</a><a href="signsSymptoms.html">Signs &
+            <div className="knowledgeMain">
+                <div className="knowledgeMain_im">
+                    <div className="knowledgeNav"><a href="hearingLoss.html">Hearing Loss</a><a href="signsSymptoms.html">Signs &
                         Symptoms</a><a href="noise.html">Loud Noise</a><a href="already.html">Already have Hearing
                         Loss</a></div>
                     <p className="i_p"><strong>Take Steps to Keep It from Getting Worse. </strong>There is no medical or
@@ -66,11 +58,10 @@ export default function AlreadyPage() {
                     <p className="i_p"></p>
                     <p className="i_p"></p>
                     <p className="i_p"></p>
-                    <div className="center "><a href="#"><img src="/aa8.jpg" width="760"/></a></div>
+                    <div className="center "><a className="knowledgeLink" href="#"><img className="knowledgeImg"  src="/aa8.jpg" width="760"/></a></div>
                     <div className="m10"></div>
                 </div>
             </div>
-            <div id="foot"></div>
         </div>
     );
 }

@@ -30,6 +30,7 @@ import {
   HistoryResultDetailInfo,
   HistoryResultDetailInfo1,
 } from "./components/Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailInfo";
+import AlreadyPage from "./components/Knowledge/Already";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,27 @@ const router = createBrowserRouter([
       {
         path: "check",
         element: <CheckEnvironment />,
+      },
+      {
+        path: "knowledge",
+        children:[
+          {
+            path: "already",
+            element: <AlreadyPage/>,
+          },
+          {
+            path: "hearing-loss",
+            element: <AlreadyPage/>,
+          },
+          {
+            path: "noise",
+            element: <AlreadyPage/>,
+          },
+          {
+            path: "signs-symptoms",
+            element: <AlreadyPage/>,
+          }
+        ]
       },
       {
         path: "profile",
