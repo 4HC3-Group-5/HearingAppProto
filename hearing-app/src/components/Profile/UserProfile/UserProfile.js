@@ -12,7 +12,7 @@ export default function UserProfile() {
                 <img src='https://img.icons8.com/android/512/user.png' className={'userProfileImage'} alt={'avatar'}/>
                 <div className="media-body">
                     <h4 className="">{user.name}</h4>
-                    <div className="text-secondary">xxxxx@gamil.com</div>
+                    <div className="text-secondary">user1@gmail.com</div>
                 </div>
             </div>
             <hr/>
@@ -31,7 +31,7 @@ export default function UserProfile() {
                     </div>
                     <div className="input-group mb-3">
                         <div className="">
-                            <label htmlFor="id_username" className="control-label requiredField">
+                            <label htmlFor="id_password" className="control-label requiredField">
                                 Password
                                 <span className="asteriskField">*</span>
                             </label>
@@ -39,6 +39,16 @@ export default function UserProfile() {
                             <div className="controls">
                                 <p id="hint_id_username" className="help-block">Required.
                                     64 characters or fewer. Letters, digits and @/./+/-/_ only.</p></div>
+                        </div>
+                    </div>
+
+                    <div className="input-group mb-3">
+                        <div className="">
+                            <label htmlFor="id_email" className="control-label requiredField">
+                                Email
+                                <span className="asteriskField">*</span>
+                            </label>
+                            <input type="text" className="form-control" placeholder="email"/>
                         </div>
                     </div>
                     <button className="btn btn-outline-info" type="submit">Update</button>

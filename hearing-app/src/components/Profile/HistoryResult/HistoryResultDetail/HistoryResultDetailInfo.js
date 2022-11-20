@@ -1,4 +1,110 @@
 import "./HistoryResultDetailInfo.css";
+import {useContext} from "react";
+import {AppContext} from "../../../../AppProvider";
+import {Link, useParams} from 'react-router-dom';
+import {fakeServer} from "../../../../data/fake_server";
+
+export function HistoryResultDetailInfo() {
+    const user = useContext(AppContext).user;
+    let {id} = useParams();
+    const resultInfo = fakeServer.get_result_by_id(id);
+    //const score = resultInfo.score.overall;
+    const score = 50;
+    const originalScore = 40;
+    const increasedScore = score - originalScore;
+    const targetScore = 80;
+    return (
+        <div className="resultInfoPage">
+            <div>
+                <h4>Current User: {user.name}</h4>
+                <div className="gauge1">
+                    <div className="percentage1"></div>
+                    <div className="mask1"></div>
+                    <span className="value1">{score}</span>
+                </div>
+                <div className="text-center">Score</div>
+            </div>
+            <hr/>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
+                        <div> Original Score</div>
+                        <div>{originalScore}</div>
+                    </div>
+                    <div className="col">
+                        <div> Score Increased</div>
+                        <div>{increasedScore}</div>
+                    </div>
+                    <div className="col">
+                        <div> Target Score</div>
+                        <div>{targetScore}</div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="row">
+                <div className="col-4 text-center">
+                    Your Score
+                    <div className="text-center">{score}</div>
+                </div>
+                <div className="col-8">
+                    You achieved better score from last time, it is still worse than the score of you age group
+                </div>
+            </div>
+            <hr/>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
+                        <div className="card">
+                            <div className="card-header">
+                                Left ear
+                            </div>
+                            <div className="card-body">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card">
+                            <div className="card-header">
+                                Right ear
+                            </div>
+                            <div className="card-body">
+                                50
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card">
+                            <div className="card-header">
+                                Ear age
+                            </div>
+                            <div className="card-body">
+                                70
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card">
+                            <div className="card-header">
+                                Ear type
+                            </div>
+                            <div className="card-body">
+                                Right-preferred
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="rightEndButton"><Link to="/profile/history" >
+                <button type="button" className="btn btn-primary">Return</button>
+            </Link></div>
+
+
+        </div>
+    );
+}
 
 export function HistoryResultDetailInfo1() {
     return (
