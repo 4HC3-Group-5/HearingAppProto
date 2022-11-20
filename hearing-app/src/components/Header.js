@@ -38,19 +38,19 @@ export default function Header() {
                 </a>
                 <ul className="dropdown-menu nav-pills nav-fill">
                     <li>
-                        <a className="dropdown-item" href="puretone">
+                        <Link className="dropdown-item" to="puretone">
                             Pure Tone Test
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="dropdown-item" href="masked">
+                        <Link className="dropdown-item" to="masked">
                             Masked Noise Test
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="dropdown-item" href="spatial">
+                        <Link className="dropdown-item" to="spatial">
                             Spatial Audio Test
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
