@@ -28,6 +28,7 @@ import {
     HistoryResultDetailInfo,
     HistoryResultDetailInfo1
 } from "./components/Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailInfo";
+import AlreadyPage from "./components/Knowledge/Already";
 
 const router = createBrowserRouter([
     {
@@ -71,6 +72,27 @@ const router = createBrowserRouter([
             {
                 path: "check",
                 element: <CheckEnvironment/>,
+            },
+            {
+                path: "knowledge",
+                children:[
+                    {
+                        path: "already",
+                        element: <AlreadyPage/>,
+                    },
+                    {
+                        path: "",
+                        element: <UserProfile/>,
+                    },
+                    {
+                        path: "",
+                        element: <UserProfile/>,
+                    },
+                    {
+                        path: "",
+                        element: <UserProfile/>,
+                    }
+                ]
             },
             {
                 path: "profile",
