@@ -1,0 +1,11 @@
+.profileSection {
+    margin: 3% 5%;
+    padding: 3%;
+    border: 1px solid #dddddd;
+}
+.userProfileImage {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+
+}

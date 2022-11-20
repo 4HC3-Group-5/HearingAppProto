@@ -5,6 +5,7 @@ import {HistoryResultDetailModal} from "./HistoryResultDetailModal"
 import {AppContext} from "../../../AppProvider";
 import {useContext} from "react";
 import {results} from "../../../data/fake_data"
+import {HistoryResultDetailModal2, HistoryResultDetailModal3} from "./HistoryResultDetailModal";
 
 function HistoryResultListPage() {
     const user = useContext(AppContext).user;
@@ -63,6 +64,8 @@ function HistoryResultListPage() {
                 </tbody>
             </table>
             <HistoryResultDetailModal/>
+            <HistoryResultDetailModal2/>
+            <HistoryResultDetailModal3/>
         </div>
 
     );

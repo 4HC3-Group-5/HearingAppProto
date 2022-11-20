@@ -1,13 +1,49 @@
-import {useContext} from "react";
+import React, {useContext} from "react";
 import {AppContext} from "../../../AppProvider";
+import "./UserProfile.css";
 import {Outlet} from "react-router-dom";
 
 export default function UserProfile() {
     const user = useContext(AppContext).user;
 
     return (
-        <>
-            <p>User profile</p>
-        </>
+        <div className="profileSection ">
+            <div className="media">
+                <img src='https://img.icons8.com/android/512/user.png' className={'userProfileImage'} alt={'avatar'}/>
+                <div className="media-body">
+                    <h4 className="">{user.name}</h4>
+                    <div className="text-secondary">xxxxx@gamil.com</div>
+                </div>
+            </div>
+            <hr/>
+            <div>
+                <div className="form-group">
+                    <div className="">
+                        <label htmlFor="id_username" className="control-label requiredField">
+                            Username
+                            <span className="asteriskField">*</span>
+                        </label>
+                        <input type="text" className="form-control" value={user.name} placeholder="username" aria-label="Password"
+                               aria-describedby="basic-addon1"/>
+                        <div className="controls">
+                            <p id="hint_id_username" className="help-block">Required.
+                            150 characters or fewer. Letters, digits and @/./+/-/_ only.</p></div>
+                    </div>
+                    <div className="input-group mb-3">
+                        <div className="">
+                            <label htmlFor="id_username" className="control-label requiredField">
+                                Password
+                                <span className="asteriskField">*</span>
+                            </label>
+                            <input type="text" className="form-control" value={user.name} placeholder="username"/>
+                            <div className="controls">
+                                <p id="hint_id_username" className="help-block">Required.
+                                    64 characters or fewer. Letters, digits and @/./+/-/_ only.</p></div>
+                        </div>
+                    </div>
+                    <button className="btn btn-outline-info" type="submit">Update</button>
+                </div>
+            </div>
+        </div>
     );
 }
