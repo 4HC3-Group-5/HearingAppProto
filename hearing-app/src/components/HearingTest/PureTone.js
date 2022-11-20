@@ -5,25 +5,41 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 export function PureToneTest() {
   return (
     <div className="parent">
+      <div className="div4 btn-gradient btn-start">
+        <div className="icon-container">
+          <span class="material-symbols-outlined icon">play_arrow</span>
+        </div>
+        <div className="text-container start-text">Start!</div>
+      </div>
+
       <div className="div1">
-        <label for="file">Test progress:</label>
-        <div class="process" id="myProgress">
-          <div id="myBar"></div>
+        <div class="stepper-wrapper">
+          <div class="stepper-item completed">
+            <div class="step-counter">1</div>
+            <div class="step-name">Select a Test</div>
+          </div>
+          <div class="stepper-item active">
+            <div class="step-counter">2</div>
+            <div class="step-name">Check Environment</div>
+          </div>
+          <div class="stepper-item">
+            <div class="step-counter">3</div>
+            <div class="step-name">Complete Test</div>
+          </div>
+          <div class="stepper-item">
+            <div class="step-counter">4</div>
+            <div class="step-name">See Result</div>
+          </div>
         </div>
       </div>
 
-      <div className="div2">
+      <div className="check2">
         <Link to="../puretone" className="btn-gradient btn-check1">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">headphones</span>
             </div>
-            <div className="text-container">
-              {/* <Link to="../puretone" class="icons" id="lefti">
-                Pure Tone Test
-              </Link> */}
-              Connect to your headphones...
-            </div>
+            <div className="text-container">Connect to your headphones...</div>
             <div className="check-container">
               <span class="material-symbols-outlined check-icon">
                 check_circle
@@ -33,10 +49,7 @@ export function PureToneTest() {
         </Link>
       </div>
 
-      <div className="div3">
-        {/* <Link to="../masked" class="icons" id="midi">
-          masked noise test
-        </Link> */}
+      <div className="check3">
         <Link to="../masked" className="btn-gradient btn-check2">
           <div className="btn-container1">
             <div className="icon-container">
@@ -52,6 +65,7 @@ export function PureToneTest() {
         </Link>
       </div>
     </div>
+
     // <>
     //     <h3>
     //         Instructions
