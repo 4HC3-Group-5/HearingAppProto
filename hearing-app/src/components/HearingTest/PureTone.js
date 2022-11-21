@@ -2,6 +2,7 @@ import React from "react";
 import "./Check.css";
 import "./Test.css";
 import { Link} from "react-router-dom";
+import {HistoryResultDetailModal2} from "../Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailModal";
 
 export function PureToneCheck() {
   return (
@@ -323,9 +324,12 @@ export function PureToneTestEnd() {
 
       <div className="test1-div4">
         <button className="box2 btn-gradient btn-result2">
-          <div className="hold-container">See My Result</div>
+          <Link to="/profile/history/4" className="hold-container">See My Result</Link>
         </button>
-
+        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test2Modal">
+          Launch demo modal
+        </button>
+        <HistoryResultDetailModal2/>
       </div>
     </div>
 
