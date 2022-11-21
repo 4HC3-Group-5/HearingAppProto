@@ -1,8 +1,9 @@
 import "./HistoryResultDetailInfo.css";
 import {useContext} from "react";
 import {AppContext} from "../../../../AppProvider";
-import {Link, useParams} from 'react-router-dom';
+import {Link, useNavigate, useParams} from 'react-router-dom';
 import {fakeServer} from "../../../../data/fake_server";
+import {TestTypes} from "../../../../data/util";
 
 export function HistoryResultDetailInfo() {
     const user = useContext(AppContext).user;
@@ -39,12 +40,17 @@ export function HistoryResultDetailInfo() {
         }
     }
 
+    const navigate = useNavigate();
+    const handleViewAnalysis = () => {
+        navigate(`/profile/analysis/${type === TestTypes.PureTone? "":type}?id=${id}`);
+    }
+
     return (
         <div className="resultInfoPage">
             <div>
                 <div className="leftAndRight">
                     <Link to="/profile/history" className=" noneLineLink ">&#60; Back</Link>
-                    <button className=" btn btn-primary">View analyse</button>
+                    <button className="btn btn-primary" onClick={handleViewAnalysis}>View analyse</button>
                 </div>
             </div>
             <div>

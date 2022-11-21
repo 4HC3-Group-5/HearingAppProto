@@ -213,7 +213,7 @@ const router = createBrowserRouter([
                                 element: <MaskedNoiseAnalysisView/>,
                             },
                             {
-                                path: "spartialaudio",
+                                path: "spatialaudio",
                                 element: <SpatialAudioAnalysisView/>,
                             },
                         ],

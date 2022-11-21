@@ -13,6 +13,8 @@ export default function AnalysisResultListItem(props) {
         }
     }
 
+    const checked = selectedResultIds.includes(result.id);
+
     return (
         <label htmlFor={result.id} className="resultItem list-group-item">
             <span className="material-symbols-outlined icon">{getIconNameByTestType(result.type)}</span>
@@ -32,7 +34,7 @@ export default function AnalysisResultListItem(props) {
             <div className={"resultScore"}>
                     {result.score.overall}
             </div>
-            <input type="checkbox" onChange={handleCheckboxChange} id={result.id}></input>
+            <input type="checkbox" checked={checked} onChange={handleCheckboxChange} id={result.id}></input>
         </label>
     )
 }

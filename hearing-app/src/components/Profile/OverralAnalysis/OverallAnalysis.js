@@ -18,7 +18,7 @@ export default function OverallAnalysis() {
                     <NavLink to={'/profile/analysis/maskednoise'} className="nav-link">Masked Noise</NavLink>
                 </div>
                 <div className="nav-item">
-                    <NavLink to={'/profile/analysis/spartialaudio'} className="nav-link">Spatial Audio</NavLink>
+                    <NavLink to={'/profile/analysis/spatialaudio'} className="nav-link">Spatial Audio</NavLink>
                 </div>
             </div>
             <div className={"analysisView"}>
