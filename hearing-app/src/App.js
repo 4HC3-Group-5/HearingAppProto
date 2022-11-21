@@ -36,7 +36,7 @@ import {
 import CheckEnvironment from "./components/HearingTest/CheckEnvironment";
 import PureToneAnalysisView from "./components/Profile/OverralAnalysis/AnalysisViews/PureToneAnalysisView";
 import MaskedNoiseAnalysisView from "./components/Profile/OverralAnalysis/AnalysisViews/MaskedNoiseAnalysisView";
-import SpartialAudioAnalysisView from "./components/Profile/OverralAnalysis/AnalysisViews/SpartialAudioAnalysisView";
+import SpatialAudioAnalysisView from "./components/Profile/OverralAnalysis/AnalysisViews/SpatialAudioAnalysisView";
 import HistoryResult from "./components/Profile/HistoryResult/HistoryResult";
 import {
   HistoryResultDetailInfo,
@@ -209,7 +209,7 @@ const router = createBrowserRouter([
               },
               {
                 path: "spartialaudio",
-                element: <SpartialAudioAnalysisView />,
+                element: <SpatialAudioAnalysisView />,
               },
             ],
           },

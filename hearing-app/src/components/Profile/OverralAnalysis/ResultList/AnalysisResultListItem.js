@@ -1,3 +1,5 @@
+import {getIconNameByTestType} from "../../../../data/util";
+
 export default function AnalysisResultListItem(props) {
     const result = props.result;
     const selectedResultIds = props.selectedResultIds;
@@ -13,7 +15,7 @@ export default function AnalysisResultListItem(props) {
 
     return (
         <label htmlFor={result.id} className="resultItem list-group-item">
-            <span className="material-symbols-outlined icon">music_note</span>
+            <span className="material-symbols-outlined icon">{getIconNameByTestType(result.type)}</span>
             <div className={"resultInfo"}>
                 <div className={"resultDate"}>
                     {result.date}

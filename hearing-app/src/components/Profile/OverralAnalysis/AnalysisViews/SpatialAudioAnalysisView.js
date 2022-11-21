@@ -3,11 +3,11 @@ import {AppContext} from "../../../../AppProvider";
 import {fakeServer} from "../../../../data/fake_server";
 import {TestTypes} from "../../../../data/util";
 import AnalysisResultList from "../ResultList/AnalysisResultList";
-import MaskedNoiseChart from "../AnalysisCharts/MaskedNoiseChart";
+import SpatialAudioChart from "../AnalysisCharts/SpatialAudioChart";
 
-export default function MaskedNoiseAnalysisView() {
+export default function SpatialAudioAnalysisView() {
     const user = useContext(AppContext).user;
-    const results = fakeServer.filter_result_by_type(fakeServer.get_result_by_username(user.name), TestTypes.MaskedNoise);
+    const results = fakeServer.filter_result_by_type(fakeServer.get_result_by_username(user.name), TestTypes.SpatialAudio);
     const [selectedResultIds, setSelectedResultsIds] = useState([]);
 
     return (
@@ -17,7 +17,7 @@ export default function MaskedNoiseAnalysisView() {
                 <AnalysisResultList results={results} selectedResultIds={selectedResultIds} setSelectedResultsIds={setSelectedResultsIds} />
             </div>
             <div className={'analysisRight'}>
-                <MaskedNoiseChart results={results} selectedResultIds={selectedResultIds} />
+                <SpatialAudioChart results={results} selectedResultIds={selectedResultIds} />
             </div>
         </>
     )
