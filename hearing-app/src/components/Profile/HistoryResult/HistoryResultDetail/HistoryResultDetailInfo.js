@@ -9,21 +9,38 @@ export function HistoryResultDetailInfo() {
     let {id} = useParams();
     const resultInfo = fakeServer.get_result_by_id(id);
     console.log(resultInfo);
-    //const score = resultInfo.score.overall;
-    const score = 50;
+    const score = resultInfo.score.overall;
     const originalScore = 40;
     const increasedScore = score - originalScore;
     const targetScore = 80;
-
+    const degree = (score/100.0) * 180.0;
     const percentageStyle = {
-        transform: `rotate(${score/180.0}deg)`
+        transform: `rotate(${degree}deg)`
     }
+
+    let gaugeStyle;
+    if (degree <= 50){
+        const gaugeStyle = {
+            backgroundColor: "#AA2222FF"
+        }
+    }
+    else if (degree >= 80){
+        const gaugeStyle = {
+            backgroundColor: "#5cb85c"
+        }
+    }
+    else {
+        const gaugeStyle = {
+            backgroundColor: "#ffc107"
+        }
+    }
+
 
     return (
         <div className="resultInfoPage">
             <div>
                 <h4>Current User: {user.name}</h4>
-                <div className="gauge1">
+                <div className="gauge1" style={gaugeStyle}>
                     <div className="percentage1" style={percentageStyle}></div>
                     <div className="mask1"></div>
                     <span className="value1">{score}</span>
