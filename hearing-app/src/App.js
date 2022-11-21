@@ -25,8 +25,13 @@ import {
   SpatialCheck,SpatialTest1,SpatialTest2,SpatialTest3,SpatialTest4
 } from "./components/HearingTest/SpatialAudio";
 import {
+  MaskedCheck,
+  MaskedEnd,
   MaskedNoiseTest1,
   MaskedNoiseTest2,
+  MaskedNoiseTest3,
+  MaskedNoiseTest4,
+  MaskedResult,
 } from "./components/HearingTest/MaskedNoise";
 import CheckEnvironment from "./components/HearingTest/CheckEnvironment";
 import PureToneAnalysisView from "./components/Profile/OverralAnalysis/AnalysisViews/PureToneAnalysisView";
@@ -87,12 +92,32 @@ const router = createBrowserRouter([
         element: <PureToneTestResult />,
       },
       {
-        path: "masked",
+        path: "masked-check",
+        element: <MaskedCheck />,
+      },
+      {
+        path: "masked1",
         element: <MaskedNoiseTest1 />,
       },
       {
         path: "masked2",
         element: <MaskedNoiseTest2 />,
+      },
+      {
+        path: "masked3",
+        element: <MaskedNoiseTest3 />,
+      },
+      {
+        path: "masked4",
+        element: <MaskedNoiseTest4 />,
+      },
+      {
+        path: "maskedend",
+        element: <MaskedEnd />,
+      },
+      {
+        path: "maskedfinish",
+        element: <MaskedResult />,
       },
       {
         path: "spatial-check",
