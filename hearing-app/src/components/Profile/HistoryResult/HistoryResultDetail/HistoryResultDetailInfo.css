@@ -211,3 +211,9 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+.noneLineLink{
+    text-decoration: none;
+    color: #5a6167;
+    font-size: 2em;
+}

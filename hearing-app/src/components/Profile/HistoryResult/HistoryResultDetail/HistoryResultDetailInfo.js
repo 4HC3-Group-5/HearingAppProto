@@ -37,9 +37,9 @@ export function HistoryResultDetailInfo() {
         }
     }
 
-
     return (
         <div className="resultInfoPage">
+            <div ><Link to="/profile/history" className="noneLineLink">&#60;</Link></div>
             <div>
                 <h4>Current User: {user.name}</h4>
                 <div className="gauge1" style={gaugeStyle}>
@@ -123,11 +123,6 @@ export function HistoryResultDetailInfo() {
                 </div>
             </div>
             <hr/>
-            <div className="rightEndButton"><Link to="/profile/history">
-                <button type="button" className="btn btn-primary">Return</button>
-            </Link></div>
-
-
         </div>
     );
 }
