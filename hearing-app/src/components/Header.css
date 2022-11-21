@@ -12,3 +12,7 @@
     border-radius: 50%;
     margin: 0 1em;
 }
+
+.nav-bar .nav-item.dropdown ul {
+    width: 25vw;
+}

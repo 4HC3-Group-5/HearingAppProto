@@ -12,7 +12,7 @@ export default function UserProfile() {
                 <img src='https://img.icons8.com/android/512/user.png' className={'userProfileImage'} alt={'avatar'}/>
                 <div className="media-body">
                     <h4 className="">{user.name}</h4>
-                    <div className="text-secondary">user1@gmail.com</div>
+                    <div className="text-secondary">User1@gmail.com</div>
                 </div>
             </div>
             <hr/>
@@ -23,7 +23,7 @@ export default function UserProfile() {
                             Username
                             <span className="asteriskField">*</span>
                         </label>
-                        <input type="text" className="form-control" value={user.name} placeholder="username" aria-label="Password"
+                        <input type="text" className="form-control" defaultValue={user.name} placeholder="username" aria-label="Password"
                                aria-describedby="basic-addon1"/>
                         <div className="controls">
                             <p id="hint_id_username" className="help-block">Required.
@@ -35,7 +35,7 @@ export default function UserProfile() {
                                 Password
                                 <span className="asteriskField">*</span>
                             </label>
-                            <input type="text" className="form-control" value={user.name} placeholder="username"/>
+                            <input type="password" className="form-control" defaultValue="password" placeholder="password"/>
                             <div className="controls">
                                 <p id="hint_id_username" className="help-block">Required.
                                     64 characters or fewer. Letters, digits and @/./+/-/_ only.</p></div>
@@ -48,7 +48,7 @@ export default function UserProfile() {
                                 Email
                                 <span className="asteriskField">*</span>
                             </label>
-                            <input type="text" className="form-control" placeholder="email"/>
+                            <input type="text" className="form-control" defaultValue="User1@example.com" placeholder="email"/>
                         </div>
                     </div>
                     <button className="btn btn-outline-info" type="submit">Update</button>
