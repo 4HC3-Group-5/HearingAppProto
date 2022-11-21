@@ -43,3 +43,36 @@
 .hold-container {
   font-size: 50px;
 }
+
+.word-container {
+  font-size: 50px;
+}
+
+.block-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  padding: 50px 50px 0px 50px;
+}
+
+.test2-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 100px) 0.5fr repeat(2, 1fr);
+
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+
+  padding: 50px 50px 0px 50px;
+}
+
+.test1-div5 {
+  grid-area: 5 / 1 / 6 / 2;
+  padding: 50px 50px 0px 50px;
+}
+
+.btn-word {
+  background-color: #6a6262;
+}

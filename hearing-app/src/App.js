@@ -12,13 +12,19 @@ import ProfileRoot from "./components/Profile/ProfileRoot";
 import UserProfile from "./components/Profile/UserProfile/UserProfile";
 import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
 import { PickTests } from "./components/HearingTest/PickTests";
-import { PureToneCheck, PureToneTest1, PureToneTest2 , PureToneTest3, PureToneTest4 } from "./components/HearingTest/PureTone";
+import {
+  PureToneCheck,
+  PureToneTest1,
+  PureToneTest2,
+  PureToneTest3,
+  PureToneTest4,
+} from "./components/HearingTest/PureTone";
 import {
   SpatialAudioTest,
   SpatialAudioTest2,
 } from "./components/HearingTest/SpatialAudio";
 import {
-  MaskedNoiseTest,
+  MaskedNoiseTest1,
   MaskedNoiseTest2,
 } from "./components/HearingTest/MaskedNoise";
 import CheckEnvironment from "./components/HearingTest/CheckEnvironment";
@@ -73,7 +79,7 @@ const router = createBrowserRouter([
       },
       {
         path: "masked",
-        element: <MaskedNoiseTest />,
+        element: <MaskedNoiseTest1 />,
       },
       {
         path: "masked2",
@@ -94,24 +100,24 @@ const router = createBrowserRouter([
       {
         path: "knowledge",
         element: <KnowledgeRoot />,
-        children:[
+        children: [
           {
             path: "already",
-            element: <ArticleAlready/>,
+            element: <ArticleAlready />,
           },
           {
             path: "",
-            element: <ArticleHearingLoss/>,
+            element: <ArticleHearingLoss />,
           },
           {
             path: "noise",
-            element: <ArticleNoise/>,
+            element: <ArticleNoise />,
           },
           {
             path: "signs-symptoms",
-            element: <ArticleSignsSymptoms/>,
-          }
-        ]
+            element: <ArticleSignsSymptoms />,
+          },
+        ],
       },
       {
         path: "profile",
