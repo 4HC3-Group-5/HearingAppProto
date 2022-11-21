@@ -1,7 +1,7 @@
 import React from "react";
 import "./Check.css";
 import "./Test.css";
-import { Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {HistoryResultDetailModal22} from "../Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailModal"
 
 export function PureToneCheck() {
@@ -283,6 +283,7 @@ export function PureToneTest4() {
 }
 
 export function PureToneTestEnd() {
+  const navigate = useNavigate();
   return (
     <div className="test1-parent">
       <div className="test1-div1">
@@ -323,7 +324,10 @@ export function PureToneTestEnd() {
       </div>
 
       <div className="test1-div4">
-        <button className="box2 btn-gradient btn-result2" data-bs-toggle="modal" data-bs-target="#test22Modal">
+        <button className="box2 btn-gradient btn-result2" data-bs-toggle="modal" data-bs-target="#test22Modal"
+                onClick={() => {
+                  navigate(`/profile/history/1`)
+                }}>
           <div className="hold-container">See My Result</div>
         </button>
         <HistoryResultDetailModal22/>
