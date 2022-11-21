@@ -8,6 +8,7 @@ export function HistoryResultDetailInfo() {
     const user = useContext(AppContext).user;
     let {id} = useParams();
     const resultInfo = fakeServer.get_result_by_id(id);
+    console.log(resultInfo);
     //const score = resultInfo.score.overall;
     const score = 50;
     const originalScore = 40;
