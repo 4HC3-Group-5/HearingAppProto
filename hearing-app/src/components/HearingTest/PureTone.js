@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Check.css";
 import "./Test.css";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 export function PureToneCheck() {
   return (
@@ -345,6 +345,69 @@ export function PureToneTest4() {
         <Link to="../puretone-test-end" className="box2 btn-gradient btn-next">
           <div className="hold-container">Next...</div>
         </Link>
+      </div>
+    </div>
+
+    // <h3>Instructions</h3>
+    // <p id="Instructions">This is the Pure Tone Test.</p>
+    // <div>
+    //   <Link to={`/check`} className="box2 btn-gradient btn-test">
+    //     <div className="btn-container">
+    //       <div className="icon-container">
+    //         <span class="material-symbols-outlined test-icon">hearing</span>
+    //       </div>
+    //       <div className="text-container">Something will happen!</div>
+    //     </div>
+    //   </Link>
+    // </div>
+  );
+}
+
+export function PureToneTestEnd() {
+  return (
+    <div className="test1-parent">
+      <div className="test1-div1">
+        <div class="stepper-wrapper">
+          <div class="stepper-item completed">
+            <div class="step-counter">1</div>
+            <div class="step-name">Select a Test</div>
+          </div>
+          <div class="stepper-item completed">
+            <div class="step-counter">2</div>
+            <div class="step-name">Check Environment</div>
+          </div>
+          <div class="stepper-item completed">
+            <div class="step-counter">3</div>
+            <div class="step-name">Complete Test</div>
+          </div>
+          <div class="stepper-item">
+            <div class="step-counter">4</div>
+            <div class="step-name">See Result</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="test1-div2">
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-success w-100"
+            role="progressbar"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+
+      <div className="test1-div3 test-ins">
+        Well Done! You have finished your test, please press the blue button below to check result. 
+      </div>
+
+      <div className="test1-div4">
+        <button className="box2 btn-gradient btn-result2">
+          <div className="hold-container">See My Result</div>
+        </button>
+
       </div>
     </div>
 

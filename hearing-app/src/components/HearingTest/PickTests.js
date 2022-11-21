@@ -59,7 +59,7 @@ export function PickTests() {
         {/* <Link to="../masked" class="icons" id="midi">
           masked noise test
         </Link> */}
-        <Link to="../masked" className="btn-gradient btn-test2">
+        <Link to="../masked-check" className="btn-gradient btn-test2">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">
@@ -79,7 +79,7 @@ export function PickTests() {
         {/* <Link to="../spatial" class="icons" id="righti">
           spatial audio test
         </Link> */}
-        <Link to="../spatial" className="btn-gradient btn-test3">
+        <Link to="../spatial-check" className="btn-gradient btn-test3">
           <div className="btn-container1">
             <div className="icon-container">
               <span class="material-symbols-outlined icon">spatial_audio</span>

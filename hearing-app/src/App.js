@@ -12,10 +12,9 @@ import ProfileRoot from "./components/Profile/ProfileRoot";
 import UserProfile from "./components/Profile/UserProfile/UserProfile";
 import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
 import { PickTests } from "./components/HearingTest/PickTests";
-import { PureToneCheck, PureToneTest1, PureToneTest2 , PureToneTest3, PureToneTest4 } from "./components/HearingTest/PureTone";
+import { PureToneCheck, PureToneTest1, PureToneTest2 , PureToneTest3, PureToneTest4, PureToneTestEnd } from "./components/HearingTest/PureTone";
 import {
-  SpatialAudioTest,
-  SpatialAudioTest2,
+  SpatialCheck,SpatialTest1,SpatialTest2,SpatialTest3,SpatialTest4
 } from "./components/HearingTest/SpatialAudio";
 import {
   MaskedNoiseTest,
@@ -72,6 +71,11 @@ const router = createBrowserRouter([
         element: <PureToneTest4 />,
       },
       {
+        path: "puretone-test-end",
+        element: <PureToneTestEnd />,
+      },
+
+      {
         path: "masked",
         element: <MaskedNoiseTest />,
       },
@@ -80,12 +84,24 @@ const router = createBrowserRouter([
         element: <MaskedNoiseTest2 />,
       },
       {
-        path: "spatial",
-        element: <SpatialAudioTest />,
+        path: "spatial-check",
+        element: <SpatialCheck />,
       },
       {
-        path: "spatial2",
-        element: <SpatialAudioTest2 />,
+        path: "spatial-test1",
+        element: <SpatialTest1 />,
+      },
+      {
+        path: "spatial-test2",
+        element: <SpatialTest2 />,
+      },
+      {
+        path: "spatial-test3",
+        element: <SpatialTest3 />,
+      },
+      {
+        path: "spatial-test4",
+        element: <SpatialTest4 />,
       },
       {
         path: "check",

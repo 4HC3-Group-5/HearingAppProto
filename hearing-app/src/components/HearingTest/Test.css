@@ -35,6 +35,15 @@
   margin: auto;
 }
 
+.btn-result2 {
+  background-color: #2433b6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .btn-next {
   background-color: #1098f7;
   float: right;
