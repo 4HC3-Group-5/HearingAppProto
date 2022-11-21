@@ -13,24 +13,22 @@ export function HistoryResultDetailInfo() {
     const originalScore = 40;
     const increasedScore = score - originalScore;
     const targetScore = 80;
-    const degree = (score/100.0) * 180.0;
+    const degree = (score / 100.0) * 180.0;
     const percentageStyle = {
         transform: `rotate(${degree}deg)`
     }
 
     let gaugeStyle;
-    if (degree <= 50){
-        const gaugeStyle = {
+    if (degree <= 50) {
+        gaugeStyle = {
             backgroundColor: "#AA2222FF"
         }
-    }
-    else if (degree >= 80){
-        const gaugeStyle = {
+    } else if (degree >= 80) {
+        gaugeStyle = {
             backgroundColor: "#5cb85c"
         }
-    }
-    else {
-        const gaugeStyle = {
+    } else {
+        gaugeStyle = {
             backgroundColor: "#ffc107"
         }
     }
@@ -71,7 +69,8 @@ export function HistoryResultDetailInfo() {
                     <div className="text-center">{score}</div>
                 </div>
                 <div className="col-8">
-                    You achieved better score from last time, it is still worse than the score of you age group
+                    You achieved better score from last time, it is still worse than the score of
+                    you age group
                 </div>
             </div>
             <hr/>
@@ -120,7 +119,7 @@ export function HistoryResultDetailInfo() {
                 </div>
             </div>
             <hr/>
-            <div className="rightEndButton"><Link to="/profile/history" >
+            <div className="rightEndButton"><Link to="/profile/history">
                 <button type="button" className="btn btn-primary">Return</button>
             </Link></div>
 
@@ -165,7 +164,8 @@ export function HistoryResultDetailInfo1() {
                     <div className="text-center">46</div>
                 </div>
                 <div className="col-8">
-                    You achieved better score from last time, it is still worse than the score of you age group
+                    You achieved better score from last time, it is still worse than the score of
+                    you age group
                 </div>
             </div>
             <hr/>
@@ -253,7 +253,8 @@ export function HistoryResultDetailInfo2() {
                     <div className="text-center">73</div>
                 </div>
                 <div className="col-8 ">
-                    You achieved better score from last time, it is still worse than the score of you age group
+                    You achieved better score from last time, it is still worse than the score of
+                    you age group
                 </div>
             </div>
             <hr/>
@@ -344,7 +345,8 @@ export function HistoryResultDetailInfo3() {
                     <div className="text-center">90</div>
                 </div>
                 <div className="col-8">
-                    You achieved the same score from last time, it is the average score from your age group. Nice job!
+                    You achieved the same score from last time, it is the average score from your
+                    age group. Nice job!
                 </div>
             </div>
             <hr/>

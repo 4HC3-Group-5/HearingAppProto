@@ -30,7 +30,8 @@ import {
   HistoryResultDetailInfo,
   HistoryResultDetailInfo1,
 } from "./components/Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailInfo";
-import AlreadyPage from "./components/Knowledge/Already";
+import ArticleAlready from "./components/Knowledge/Articles/ArticleAlready";
+import KnowledgeRoot from "./components/Knowledge/KnowledgeRoot";
 
 const router = createBrowserRouter([
   {
@@ -89,22 +90,23 @@ const router = createBrowserRouter([
       },
       {
         path: "knowledge",
+        element: <KnowledgeRoot />,
         children:[
           {
             path: "already",
-            element: <AlreadyPage/>,
+            element: <ArticleAlready/>,
           },
           {
             path: "hearing-loss",
-            element: <AlreadyPage/>,
+            element: <ArticleAlready/>,
           },
           {
             path: "noise",
-            element: <AlreadyPage/>,
+            element: <ArticleAlready/>,
           },
           {
             path: "signs-symptoms",
-            element: <AlreadyPage/>,
+            element: <ArticleAlready/>,
           }
         ]
       },

@@ -1,0 +1,31 @@
+.knowledgeRoot {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.knowledgeRoot > .leftSidebar {
+    flex-basis: 30%;
+    flex-grow: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    background: white;
+}
+
+.knowledgeRoot > .leftSidebar > .nav-link {
+    height: 3em;
+    line-height: 2em;
+    width: auto;
+
+    border-radius: 0;
+}
+
+.knowledgeRoot > .rightPanel {
+    padding: 1em;
+
+    flex-grow: 1;
+}
