@@ -4,20 +4,20 @@ import {useCookies} from "react-cookie";
 export const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
+    const [cookies, setCookie, removeCookie] = useCookies(['username']);
     const [user, setUser] = React.useState({
-        name: null,
+        name: cookies.username ? cookies.username : null,
     });
 
-    const [userCookie, setUserCookie, removeUserCookie] = useCookies(['not used']);
 
-    console.log(userCookie);
-
-    setUserCookie('user', user);
 
     // Definition of the global variable
     const value = {
         'user': user,
-        'setUser': setUser
+        'setUser': (user) => {
+            setUser(user);
+            setCookie('username', user.name);
+        }
     };
 
     return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

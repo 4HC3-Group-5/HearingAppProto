@@ -10,7 +10,7 @@ export default function Header() {
 
     const userElement = user.name ?
         (<div className={"nav-item userNavitem"}>
-            <Link to={'/profile'} className="nav-link">
+            <Link to={'/profile/'} className="nav-link">
                 <img src='https://img.icons8.com/android/512/user.png' className={'userIcon bg-light'} alt={'avatar'}/>
                 <span>{user.name}</span>
             </Link>

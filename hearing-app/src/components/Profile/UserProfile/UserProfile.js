@@ -1,10 +1,18 @@
 import React, {useContext} from "react";
 import {AppContext} from "../../../AppProvider";
 import "./UserProfile.css";
-import {Outlet} from "react-router-dom";
+import {Outlet, useNavigate} from "react-router-dom";
 
 export default function UserProfile() {
-    const user = useContext(AppContext).user;
+    const {user, setUser} = useContext(AppContext);
+    const navigate = useNavigate();
+
+    const logout = () => {
+        setUser({
+            name: null,
+        });
+        navigate('/');
+    }
 
     return (
         <div className="profileSection ">
@@ -15,6 +23,8 @@ export default function UserProfile() {
                     <div className="text-secondary">User1@gmail.com</div>
                 </div>
             </div>
+            <br/>
+            <button className="btn btn-danger" onClick={logout}>Logout</button>
             <hr/>
             <div>
                 <div className="form-group">
@@ -51,7 +61,7 @@ export default function UserProfile() {
                             <input type="text" className="form-control" defaultValue="User1@example.com" placeholder="email"/>
                         </div>
                     </div>
-                    <button className="btn btn-outline-info" type="submit">Update</button>
+                    <button className="btn btn-info" type="submit">Update</button>
                 </div>
             </div>
         </div>
