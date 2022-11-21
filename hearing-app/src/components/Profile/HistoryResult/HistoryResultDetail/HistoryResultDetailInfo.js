@@ -166,6 +166,23 @@ export function HistoryResultDetailInfo1() {
             <div className="container text-center">
                 <div className="row">
                     <div className="col">
+                        <div> Test ID</div>
+                        <div>1</div>
+                    </div>
+                    <div className="col">
+                        <div> Type</div>
+                        <div>PureTone</div>
+                    </div>
+                    <div className="col">
+                        <div> Date</div>
+                        <div>2022-09-26</div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
                         <div> Original Score</div>
                         <div>40</div>
                     </div>
@@ -250,6 +267,23 @@ export function HistoryResultDetailInfo2() {
                     <span className="value2">73</span>
                 </div>
                 <div className="text-center">Score</div>
+            </div>
+            <hr/>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
+                        <div> Test ID</div>
+                        <div>2</div>
+                    </div>
+                    <div className="col">
+                        <div> Type</div>
+                        <div>MaskedNoise</div>
+                    </div>
+                    <div className="col">
+                        <div> Date</div>
+                        <div>2022-10-11</div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div className="container text-center">
@@ -369,6 +403,23 @@ export function HistoryResultDetailInfo3() {
                 <div className="col-8">
                     You achieved the same score from last time, it is the average score from your
                     age group. Nice job!
+                </div>
+            </div>
+            <hr/>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
+                        <div> Test ID</div>
+                        <div>3</div>
+                    </div>
+                    <div className="col">
+                        <div> Type</div>
+                        <div>SpatialAudio</div>
+                    </div>
+                    <div className="col">
+                        <div> Date</div>
+                        <div>2022-10-19</div>
+                    </div>
                 </div>
             </div>
             <hr/>
