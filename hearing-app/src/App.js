@@ -12,7 +12,7 @@ import ProfileRoot from "./components/Profile/ProfileRoot";
 import UserProfile from "./components/Profile/UserProfile/UserProfile";
 import OverallAnalysis from "./components/Profile/OverralAnalysis/OverallAnalysis";
 import { PickTests } from "./components/HearingTest/PickTests";
-import { PureToneCheck, PureToneTest } from "./components/HearingTest/PureTone";
+import { PureToneCheck, PureToneTest1, PureToneTest2 , PureToneTest3, PureToneTest4 } from "./components/HearingTest/PureTone";
 import {
   SpatialAudioTest,
   SpatialAudioTest2,
@@ -52,8 +52,20 @@ const router = createBrowserRouter([
         element: <PureToneCheck />,
       },
       {
-        path: "puretone-test",
-        element: <PureToneTest />,
+        path: "puretone-test1",
+        element: <PureToneTest1 />,
+      },
+      {
+        path: "puretone-test2",
+        element: <PureToneTest2 />,
+      },
+      {
+        path: "puretone-test3",
+        element: <PureToneTest3 />,
+      },
+      {
+        path: "puretone-test4",
+        element: <PureToneTest4 />,
       },
       {
         path: "masked",
