@@ -192,9 +192,9 @@ export function PureToneTest2() {
       <div className="test1-div2">
         <div class="progress">
           <div
-            class="progress-bar progress-bar-striped bg-success w-25"
+            class="progress-bar progress-bar-striped bg-success w-50"
             role="progressbar"
-            aria-valuenow="25"
+            aria-valuenow="50"
             aria-valuemin="0"
             aria-valuemax="100"
           ></div>
@@ -258,9 +258,9 @@ export function PureToneTest3() {
       <div className="test1-div2">
         <div class="progress">
           <div
-            class="progress-bar progress-bar-striped bg-success w-25"
+            class="progress-bar progress-bar-striped bg-success w-75"
             role="progressbar"
-            aria-valuenow="25"
+            aria-valuenow="75"
             aria-valuemin="0"
             aria-valuemax="100"
           ></div>
@@ -324,9 +324,9 @@ export function PureToneTest4() {
       <div className="test1-div2">
         <div class="progress">
           <div
-            class="progress-bar progress-bar-striped bg-success w-25"
+            class="progress-bar progress-bar-striped bg-success w-100"
             role="progressbar"
-            aria-valuenow="25"
+            aria-valuenow="100"
             aria-valuemin="0"
             aria-valuemax="100"
           ></div>
