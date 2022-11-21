@@ -15,6 +15,6 @@ export class fakeServer {
     }
 
     static get_result_by_id(id) {
-        return results.find((item) => item.id === id);
+        return results.find((item) => item.id.toString() === id.toString());
     }
 }
