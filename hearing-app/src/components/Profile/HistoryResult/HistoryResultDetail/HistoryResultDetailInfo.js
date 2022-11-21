@@ -14,12 +14,17 @@ export function HistoryResultDetailInfo() {
     const originalScore = 40;
     const increasedScore = score - originalScore;
     const targetScore = 80;
+
+    const percentageStyle = {
+        transform: `rotate(${score/180.0}deg)`
+    }
+
     return (
         <div className="resultInfoPage">
             <div>
                 <h4>Current User: {user.name}</h4>
                 <div className="gauge1">
-                    <div className="percentage1"></div>
+                    <div className="percentage1" style={percentageStyle}></div>
                     <div className="mask1"></div>
                     <span className="value1">{score}</span>
                 </div>
