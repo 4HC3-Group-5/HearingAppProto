@@ -47,7 +47,11 @@
 
 .btn-next {
   background-color: #1098f7;
-  float: right;
+  /* float: right; */
+  height: 80px;
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
 }
 
 .hold-container {
