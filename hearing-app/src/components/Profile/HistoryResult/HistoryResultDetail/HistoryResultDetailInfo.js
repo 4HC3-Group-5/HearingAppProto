@@ -10,6 +10,8 @@ export function HistoryResultDetailInfo() {
     const resultInfo = fakeServer.get_result_by_id(id);
     console.log(resultInfo);
     const score = resultInfo.score.overall;
+    const type = resultInfo.type;
+    const date = resultInfo.date;
     const originalScore = 40;
     const increasedScore = score - originalScore;
     const targetScore = 80;
@@ -39,15 +41,36 @@ export function HistoryResultDetailInfo() {
 
     return (
         <div className="resultInfoPage">
-            <div ><Link to="/profile/history" className="noneLineLink">&#60;</Link></div>
             <div>
-                <h4>Current User: {user.name}</h4>
+                <div className="leftAndRight">
+                    <Link to="/profile/history" className=" noneLineLink ">&#60; Back</Link>
+                    <button className=" btn btn-primary">View analyse</button>
+                </div>
+            </div>
+            <div>
                 <div className="gauge1" style={gaugeStyle}>
                     <div className="percentage1" style={percentageStyle}></div>
                     <div className="mask1"></div>
                     <span className="value1">{score}</span>
                 </div>
                 <div className="text-center">Score</div>
+            </div>
+            <hr/>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
+                        <div> Test ID</div>
+                        <div>#{id}</div>
+                    </div>
+                    <div className="col">
+                        <div> Type</div>
+                        <div>{type}</div>
+                    </div>
+                    <div className="col">
+                        <div> Date</div>
+                        <div>{date}</div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div className="container text-center">

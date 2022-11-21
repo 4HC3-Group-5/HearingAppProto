@@ -217,3 +217,8 @@
     color: #5a6167;
     font-size: 2em;
 }
+
+.leftAndRight{
+    display: flex;
+    justify-content: space-between;
+}
