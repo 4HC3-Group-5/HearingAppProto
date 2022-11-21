@@ -54,9 +54,9 @@ export default function Header() {
                     </li>
                 </ul>
             </div>
-            <a className="nav-link" href="#">
+            <Link to={'/knowledge'} className="nav-link" href="#">
                 HEARING Q&As
-            </a>
+            </Link>
             {userElement}
 
         </nav>

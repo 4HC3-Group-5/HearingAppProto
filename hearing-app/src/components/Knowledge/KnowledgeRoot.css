@@ -5,8 +5,9 @@
 }
 
 .knowledgeRoot > .leftSidebar {
-    flex-basis: 30%;
+    flex-basis: 16em;
     flex-grow: 0;
+    flex-shrink: 0;
     height: 100%;
 
     display: flex;
