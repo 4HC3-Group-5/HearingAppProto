@@ -18,7 +18,8 @@ import {
   PureToneTest2,
   PureToneTest3,
   PureToneTest4,
-  PureToneTestEnd
+  PureToneTestEnd,
+  PureToneTestResult
 } from "./components/HearingTest/PureTone";
 import {
   SpatialCheck,SpatialTest1,SpatialTest2,SpatialTest3,SpatialTest4
@@ -81,7 +82,10 @@ const router = createBrowserRouter([
         path: "puretone-test-end",
         element: <PureToneTestEnd />,
       },
-
+      {
+        path: "puretone-test-result",
+        element: <PureToneTestResult />,
+      },
       {
         path: "masked",
         element: <MaskedNoiseTest1 />,
