@@ -52,19 +52,19 @@ function MainPage() {
   return (
     <div className="main-page">
       <div className="main-menu">
-        <button className="box1 btn-gradient btn-info">
+        <Link to={'/knowledge'} className="box1 btn-gradient btn-info">
           <div className="btn-container">
             <div className="icon-container">
-              <span class="material-symbols-outlined info-icon">info</span>
+              <span className="material-symbols-outlined info-icon">info</span>
             </div>
             <div className="text-container">Hearing Q&As</div>
           </div>
-        </button>
+        </Link>
 
         <Link to={`/test`} className="box2 btn-gradient btn-test">
           <div className="btn-container">
             <div className="icon-container">
-              <span class="material-symbols-outlined test-icon">hearing</span>
+              <span className="material-symbols-outlined test-icon">hearing</span>
             </div>
             <div className="text-container">Taking a test</div>
           </div>

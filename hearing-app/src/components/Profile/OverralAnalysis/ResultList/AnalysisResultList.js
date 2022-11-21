@@ -5,13 +5,7 @@ import {useContext, useState} from "react";
 import AnalysisResultListItem from "./AnalysisResultListItem";
 
 export default function AnalysisResultList(props) {
-    const testType = props.testType;
-    const results = props.results;
-    const user = useContext(AppContext);
-
-    const [selectedResultIds, setSelectedResultsIds] = useState([]);
-
-
+    const {results, selectedResultIds, setSelectedResultsIds} = props;
 
     return (
         <div className="analysisResultList list-group">

@@ -4,7 +4,6 @@ export default function AnalysisResultListItem(props) {
     const setSelectedResultsIds = props.setSelectedResultsIds;
 
     const handleCheckboxChange = (e) => {
-        console.log('sbsb');
         if (e.target.checked) {
             setSelectedResultsIds([...selectedResultIds, result.id]);
         } else {
@@ -19,8 +18,13 @@ export default function AnalysisResultListItem(props) {
                 <div className={"resultDate"}>
                     {result.date}
                 </div>
-                <div className={"resultType"}>
-                    {result.type}
+                <div>
+                    <span className={"resultType"}>
+                        {result.type}
+                    </span>
+                    <span className={"resultId"}>
+                        #{result.id}
+                    </span>
                 </div>
             </div>
             <div className={"resultScore"}>
