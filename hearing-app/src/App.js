@@ -22,7 +22,7 @@ import {
   PureToneTestResult
 } from "./components/HearingTest/PureTone";
 import {
-  SpatialCheck,SpatialTest1,SpatialTest2,SpatialTest3,SpatialTest4
+  SpatialCheck,SpatialEnd,SpatialResult,SpatialTest1,SpatialTest2,SpatialTest3,SpatialTest4
 } from "./components/HearingTest/SpatialAudio";
 import {
   MaskedCheck,
@@ -138,6 +138,14 @@ const router = createBrowserRouter([
       {
         path: "spatial-test4",
         element: <SpatialTest4 />,
+      },
+      {
+        path: "spatial-test-end",
+        element: <SpatialEnd />,
+      },
+      {
+        path: "spatial-test-finish",
+        element: <SpatialResult />,
       },
       {
         path: "check",
