@@ -17,8 +17,8 @@ export default function KnowledgeRoot() {
     return (
         <div className={'knowledgeRoot'}>
             <div className={'leftSidebar nav nav-pills'}>
-                <NavLink to={'/knowledge/'} className="nav-link">What is Hearing Loss</NavLink>
-                <NavLink to={'/knowledge/signsSymptoms'} className="nav-link">Signs&Symptoms</NavLink>
+                <NavLink to={'/knowledge'} end={true} className="nav-link">What is Hearing Loss</NavLink>
+                <NavLink to={'/knowledge/signs-symptoms'} className="nav-link">Signs & Symptoms</NavLink>
                 <NavLink to={'/knowledge/noise'} className="nav-link">Loud Noise</NavLink>
                 <NavLink to={'/knowledge/already'} className="nav-link">Already Have Hearing Loss</NavLink>
             </div>

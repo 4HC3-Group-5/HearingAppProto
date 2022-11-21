@@ -32,6 +32,9 @@ import {
 } from "./components/Profile/HistoryResult/HistoryResultDetail/HistoryResultDetailInfo";
 import ArticleAlready from "./components/Knowledge/Articles/ArticleAlready";
 import KnowledgeRoot from "./components/Knowledge/KnowledgeRoot";
+import ArticleHearingLoss from "./components/Knowledge/Articles/ArticleHearingLoss";
+import ArticleNoise from "./components/Knowledge/Articles/ArticleNoise";
+import ArticleSignsSymptoms from "./components/Knowledge/Articles/ArticleSignsSymptoms";
 
 const router = createBrowserRouter([
   {
@@ -97,16 +100,16 @@ const router = createBrowserRouter([
             element: <ArticleAlready/>,
           },
           {
-            path: "hearing-loss",
-            element: <ArticleAlready/>,
+            path: "",
+            element: <ArticleHearingLoss/>,
           },
           {
             path: "noise",
-            element: <ArticleAlready/>,
+            element: <ArticleNoise/>,
           },
           {
             path: "signs-symptoms",
-            element: <ArticleAlready/>,
+            element: <ArticleSignsSymptoms/>,
           }
         ]
       },

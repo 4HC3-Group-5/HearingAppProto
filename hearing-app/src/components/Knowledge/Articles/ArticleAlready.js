@@ -6,7 +6,7 @@ export default function ArticleAlready() {
 
     return (
         <div className={'knowledgeArticle'}>
-            <h1>Already Have Hearing Loss</h1>
+            <h1>Already Have Hearing Loss?</h1>
             <p>
                 <b>Take Steps to Keep It from Getting Worse.</b> There is no medical or surgical treatment for hearing loss caused by noise. Damaged hair cells do not grow back. As much as possible, you should try to protect your hearing. If you do have hearing loss, you should take steps to keep it from getting worse.
             </p>
