@@ -13,17 +13,21 @@ export function HistoryResultDetailInfo() {
     const originalScore = 40;
     const increasedScore = score - originalScore;
     const targetScore = 80;
+    const leftEarScore = resultInfo.score.left;
+    const rightEarScore = resultInfo.score.right;
+    const earAge = resultInfo.ear_age;
     const degree = (score / 100.0) * 180.0;
+    const earType = resultInfo.ear_type;
     const percentageStyle = {
         transform: `rotate(${degree}deg)`
     }
 
     let gaugeStyle;
-    if (degree <= 50) {
+    if (score <= 50) {
         gaugeStyle = {
             backgroundColor: "#AA2222FF"
         }
-    } else if (degree >= 80) {
+    } else if (score >= 80) {
         gaugeStyle = {
             backgroundColor: "#5cb85c"
         }
@@ -82,7 +86,7 @@ export function HistoryResultDetailInfo() {
                                 Left ear
                             </div>
                             <div className="card-body">
-                                30
+                                {leftEarScore}
                             </div>
                         </div>
                     </div>
@@ -92,7 +96,7 @@ export function HistoryResultDetailInfo() {
                                 Right ear
                             </div>
                             <div className="card-body">
-                                50
+                                {rightEarScore}
                             </div>
                         </div>
                     </div>
@@ -102,7 +106,7 @@ export function HistoryResultDetailInfo() {
                                 Ear age
                             </div>
                             <div className="card-body">
-                                70
+                                {earAge}
                             </div>
                         </div>
                     </div>
@@ -112,7 +116,7 @@ export function HistoryResultDetailInfo() {
                                 Ear type
                             </div>
                             <div className="card-body">
-                                Right-preferred
+                                {earType}
                             </div>
                         </div>
                     </div>
