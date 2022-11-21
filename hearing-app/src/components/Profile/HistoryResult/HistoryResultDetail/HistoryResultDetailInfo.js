@@ -42,7 +42,7 @@ export function HistoryResultDetailInfo() {
 
     const navigate = useNavigate();
     const handleViewAnalysis = () => {
-        navigate(`/profile/analysis/${type === TestTypes.PureTone? "":type}?id=${id}`);
+        navigate(`/profile/analysis${type === TestTypes.PureTone? "":`/${type}`}?id=${id}`);
     }
 
     return (
